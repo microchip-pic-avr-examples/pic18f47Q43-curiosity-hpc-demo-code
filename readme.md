@@ -94,11 +94,12 @@ The PIC18-Q43 family of devices have an on-board Analog-to-Digital Converter wit
 #### Introduction
 This lab combines all of the previous lab to produce a variable speed rotating LED display that is proportional to the ADC value. The ADC value and LED rotate speed are inversely proportional to each other.
 #### Hardware Effects
-Rotate the clockwise to see the LEDs shift faster. <br />
+Rotate the on-board potentiometer to change the speed of the LEDs shift. <br />
 The ADC value will be printed on UART TX pin which is connected to pin RC6 through PPS. Connect this pin to the Virtual COM port's TX pin using a jumper wire to use the onboard serial to USB feature.
 #### Summary
 A crucial step in this lab is to check if the ADC value is 0. If it does not perform the zero check, and the ADC result is zero, the LEDs will rotate at an incorrect speed. This is an effect of the delay value underflowing from 0 to 255.
 
+###### Program Flow
 ![Lab 5 Program Flow](images/Lab5-program-flow.PNG)
 
 ### <u>Lab 6: PULSE-WIDTH MODULATION (PWM)</u>
@@ -151,6 +152,7 @@ This lab provides code for writing and reading a single byte onto the on-board E
 #### Hardware Effects
 The top 4 MSBs of the ADC is written to EEPROM. These are read afterwards and displayed on the LEDs. Rotating the potentiometer changes value of the ADC to be written to and read from EEPROM.
 #### Summary
-This lab has a similar appearance to Lab 4: ADC. But instead of directly moving the ADC result directly onto the LEDs, it performs a simple “write” and “read” on the EEPROM. As shown on FIGURE 10-1 below, the top 4 MSBs of the ADC result is first written to EEPROM, and retrieved later from the same address before moving onto the LEDs.
+This lab has a similar appearance to Lab 4: ADC. But instead of directly moving the ADC result directly onto the LEDs, it performs a simple “write” and “read” on the EEPROM. As shown on figure below, the top 4 MSBs of the ADC result is first written to EEPROM, and retrieved later from the same address before moving onto the LEDs.
 
+###### Program Flow
 ![Lab 5 Program Flow](images/Lab10-program-flow.PNG)
