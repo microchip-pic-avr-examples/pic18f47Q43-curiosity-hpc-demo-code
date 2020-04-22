@@ -1,21 +1,17 @@
 /**
-  Interrupt Lab Source File
+  Timer1 Lab Source File
 
   Company:
     Microchip Technology Inc.
 
   File Name:
-    Interrupt.c
+    Timer1.c
 
   Summary:
-    This is the source file for the Interrupt lab
+    This is the source file for the Timer1 lab
 
   Description:
-    This source file contains the code on how the Interrupt lab works.
-    Generation Information :
-        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.80.0
-        Device            :  PIC18F47Q43
-        Driver Version    :  2.00
+    This source file contains the code on how the Timer1 lab works.
  */
 
 /*
@@ -45,14 +41,8 @@
  */
 
 #include "../../mcc_generated_files/pin_manager.h"
-#include "../../mcc_generated_files/interrupt_manager.h"
-#include "../../mcc_generated_files/tmr0.h"
+#include "../../mcc_generated_files/tmr1.h"
 #include "../../labs.h"
-
-/**
-  Section: Local Function Prototypes
- */
-void LAB_ISR(void);
 
 /**
   Section: Local Variable Declarations
@@ -62,45 +52,41 @@ static uint8_t rotateReg;
 /*
                              Application    
  */
-void Interrupt(void) {
+void Timer1(void) {
 
     if (labState == NOT_RUNNING) {
         LEDs_SetLow();
         LED_D2_SetHigh();
-        
+
+        //Initialize temporary register to begin at 1
         rotateReg = 1;
-       
-        INTERRUPT_GlobalInterruptEnable();
-        INTERRUPT_TMR0InterruptEnable();
-        
-        TMR0_SetInterruptHandler(LAB_ISR);
- 
+
+        TMR1_StartTimer();
+
         labState = RUNNING;
     }
 
-    if(labState == RUNNING){ 
-        // Do nothing. Just wait for an interrupt event 
-    }
-    
-    if (switchEvent) {
-        INTERRUPT_TMR0InterruptDisable();
+    if (labState == RUNNING) {
+        while(!TMR1_HasOverflowOccured());       
+        TMR1IF = 0;                
+        TMR1_Reload();
 
-        INTERRUPT_GlobalInterruptDisable();
+        rotateReg <<= 1;
+
+        //Return to initial position of LED
+        if (rotateReg == LAST) {
+            rotateReg = 1;
+        }
+
+        //Determine which LED will light up
+        LEDs = (rotateReg << 4);
+    }
+
+    if (switchEvent) {
+        TMR1_StopTimer();
 
         labState = NOT_RUNNING;
     }
-}
-
-void LAB_ISR(void) {    
-    //If the last LED has been lit, restart the pattern    
-    if (rotateReg == 1) {
-        rotateReg = LAST;
-    }
-
-    rotateReg >>= 1;
-    
-    //Check which LED should be lit
-    LEDs = (rotateReg << 4);
 }
 /**
  End of File

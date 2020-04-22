@@ -83,17 +83,19 @@ Similarly, if we want to push a ‘1’ into the MSB of the register and have th
 This lab shows how to configure the ADC, run a conversion, read the analog voltage controlled by the on-board potentiometer, print the conversion result on UART and display the high order four bits on the display.
 
 #### Hardware Effects
-The four most significant bits of the ADC result are reflected onto each of the four LEDs respectively. Rotate the potentiometer to change the display. The ADC value will be printed on UART TX pin which is connected to pin RC5 through PPS. Connect this pin to the Virtual COM port's TX pin using a jumper wire to use the onboard serial to USB feature.
+The four most significant bits of the ADC result are reflected onto each of the four LEDs respectively. Rotate the potentiometer to change the display. <br />
+The ADC value will be printed on UART TX pin which is connected to pin RC6 through PPS. Connect this pin to the Virtual COM port's TX pin using a jumper wire to use the onboard serial to USB feature.
 
 #### Summary
-The PIC devices have an on-board Analog-to-Digital Converter (ADC) with 12 bits of resolution. Several devices feature the Analog-to-Digital Converter with Computation which can also be configured to operate in basic mode similar to the legacy ADC operation. (Note: The type of ADC, channels and resolution vary amongst the devices. Refer to the datasheet for more detail.) The converter can be referenced to the device’s VDD or an external voltage reference. This lab references it to VDD. The result from the ADC is represented by a ratio of the voltage to the reference.
+The PIC18-Q43 family of devices have an on-board Analog-to-Digital Converter with Computation (ADCC) with 12 bits of resolution. The converter can be referenced to the device’s VDD or an external voltage reference. This lab references it to VDD. The result from the ADC is represented by a ratio of the voltage to the reference.
 
 
 ### <u>Lab 5: VARIABLE SPEED ROTATE</u>
 #### Introduction
 This lab combines all of the previous lab to produce a variable speed rotating LED display that is proportional to the ADC value. The ADC value and LED rotate speed are inversely proportional to each other.
 #### Hardware Effects
-Rotate the clockwise to see the LEDs shift faster. The ADC value will be printed on UART TX pin which is connected to pin RC5 through PPS. Connect this pin to the Virtual COM port's TX pin using a jumper wire to use the onboard serial to USB feature.
+Rotate the clockwise to see the LEDs shift faster. <br />
+The ADC value will be printed on UART TX pin which is connected to pin RC6 through PPS. Connect this pin to the Virtual COM port's TX pin using a jumper wire to use the onboard serial to USB feature.
 #### Summary
 A crucial step in this lab is to check if the ADC value is 0. If it does not perform the zero check, and the ADC result is zero, the LEDs will rotate at an incorrect speed. This is an effect of the delay value underflowing from 0 to 255.
 
@@ -103,7 +105,8 @@ A crucial step in this lab is to check if the ADC value is 0. If it does not per
 #### Introduction
 In this lab, the PIC MCU generates a PWM signal that lights an LED with the potentiometer thereby controlling the brightness.
 #### Hardware Effects
-Rotating potentiometer will adjust the brightness of LED D5. The ADC value will be printed on UART TX pin which is connected to pin RC5 through PPS. Connect this pin to the Virtual COM port's TX pin using a jumper wire to use the onboard serial to USB feature.
+Rotating potentiometer will adjust the brightness of LED D5. <br />
+The ADC value will be printed on UART TX pin which is connected to pin RC6 through PPS. Connect this pin to the Virtual COM port's TX pin using a jumper wire to use the onboard serial to USB feature.
 #### Summary
 Pulse-Width Modulation (PWM) is a scheme that provides power to a load by switching quickly between fully ON and fully OFF states. The PWM signal resembles a square wave where the high portion of the signal is considered the ON state and the low portion of the signal is considered the OFF state. The high portion, also known as the pulse width, can vary in time and is defined in steps. A longer, high ON time will illuminate the LED brighter. The frequency or period of the PWM does not change. The PWM period is defined as the duration of one cycle or the total amount of ON and OFF time combined. Another important term to take note is the PWM duty cycle which is the ratio of the pulse width to the period and is often expressed in percentage. A lower duty cycle corresponds to less power applied and a higher duty cycle corresponds to more power applied.
 

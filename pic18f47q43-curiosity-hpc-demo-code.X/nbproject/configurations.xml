@@ -58,20 +58,20 @@
                        projectFiles="true">
           <itemPath>Labs/Lab06_PulseWidthModulation/PWM.c</itemPath>
         </logicalFolder>
-        <logicalFolder name="Lab07_Interrupts"
-                       displayName="Lab07_Interrupts"
+        <logicalFolder name="Lab07_Timers"
+                       displayName="Lab07_Timers"
                        projectFiles="true">
-          <itemPath>Labs/Lab07_Interrupts/Interrupt.c</itemPath>
+          <itemPath>Labs/Lab07_Timers/Timer1.c</itemPath>
         </logicalFolder>
-        <logicalFolder name="Lab08_SleepWakeup"
-                       displayName="Lab08_SleepWakeup"
+        <logicalFolder name="Lab08_Interrupts"
+                       displayName="Lab08_Interrupts"
                        projectFiles="true">
-          <itemPath>Labs/Lab08_SleepWakeup/SleepWakeUp.c</itemPath>
+          <itemPath>Labs/Lab08_Interrupts/Interrupt.c</itemPath>
         </logicalFolder>
-        <logicalFolder name="Lab09_Timers"
-                       displayName="Lab09_Timers"
+        <logicalFolder name="Lab09_SleepWakeup"
+                       displayName="Lab09_SleepWakeup"
                        projectFiles="true">
-          <itemPath>Labs/Lab09_Timers/Timer1.c</itemPath>
+          <itemPath>Labs/Lab09_SleepWakeup/SleepWakeUp.c</itemPath>
         </logicalFolder>
         <logicalFolder name="Lab10_EEPROM"
                        displayName="Lab10_EEPROM"

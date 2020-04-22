@@ -1,21 +1,17 @@
 /**
-  Timer1 Lab Source File
+  Sleep Wakeup Lab Source File
 
   Company:
     Microchip Technology Inc.
 
   File Name:
-    Timer1.c
+    SleepWakeUp.c
 
   Summary:
-    This is the source file for the Timer1 lab
+    This is the source file for the Sleep Wakeup lab
 
   Description:
-    This source file contains the code on how the Timer1 lab works.
-    Generation Information :
-        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.80.0
-        Device            :  PIC18F47Q43
-        Driver Version    :  2.00
+    This source file contains the code on how the Sleep Wakeup lab works.
  */
 
 /*
@@ -38,57 +34,49 @@
 
     MICROCHIP PROVIDES THIS SOFTWARE CONDITIONALLY UPON YOUR ACCEPTANCE OF THESE
     TERMS.
-*/
+ */
 
 /**
   Section: Included Files
  */
 
+#include <pic18.h>
+
 #include "../../mcc_generated_files/pin_manager.h"
-#include "../../mcc_generated_files/tmr1.h"
 #include "../../labs.h"
 
 /**
-  Section: Local Variable Declarations
+  Section: Macro Declaration
  */
-static uint8_t rotateReg;
+#define WDT_Enable()        (WDTCON0bits.SWDTEN = 1)
+#define WDT_Disable()       (WDTCON0bits.SWDTEN = 0)
 
 /*
                              Application    
  */
-void Timer1(void) {
+void SleepWakeUp(void) {
 
     if (labState == NOT_RUNNING) {
-        LEDs_SetLow();
-        LED_D2_SetHigh();
+        LED_D2_LAT = LED_D4_LAT = HIGH;
+        LED_D3_LAT = LED_D5_LAT = LOW;
 
-        //Initialize temporary register to begin at 1
-        rotateReg = 1;
+        WDT_Enable();
 
-        TMR1_StartTimer();
+        SLEEP();
 
         labState = RUNNING;
     }
 
     if (labState == RUNNING) {
-        while(!TMR1_HasOverflowOccured());       
-        TMR1IF = 0;                
-        TMR1_Reload();
+        //Wait 4 seconds for the WDT time out
+        //and reverse the states of the LEDs
+        LED_D2_LAT = LED_D4_LAT = LOW;
+        LED_D3_LAT = LED_D5_LAT = HIGH;
 
-        rotateReg <<= 1;
-
-        //Return to initial position of LED
-        if (rotateReg == LAST) {
-            rotateReg = 1;
-        }
-
-        //Determine which LED will light up
-        LEDs = (rotateReg << 4);
+        WDT_Disable();
     }
 
     if (switchEvent) {
-        TMR1_StopTimer();
-
         labState = NOT_RUNNING;
     }
 }

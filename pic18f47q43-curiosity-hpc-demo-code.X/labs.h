@@ -12,10 +12,6 @@
 
   @Description
     This header file provides all the variables and function prototypes used in this project.
-    Generation Information :
-        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.80.0
-        Device            :  PIC18F47Q43
-        Driver Version    :  2.00
  */
 
 /*
