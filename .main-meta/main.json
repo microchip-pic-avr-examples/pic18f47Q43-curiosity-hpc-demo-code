@@ -32,7 +32,7 @@
             "content": {
                 "metaDataVersion": "1.0.0",
                 "category": "com.microchip.device",
-                "name": "PIC18F46Q43",
+                "name": "PIC18F47Q43",
                 "versionRange": "*"
             }
         },
