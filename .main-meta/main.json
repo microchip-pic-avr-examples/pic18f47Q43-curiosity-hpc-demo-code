@@ -27,10 +27,10 @@
             "semverRange": ">=3.95.0"
         },
         "device": {
-            "metaDataVersion": "1.0.1",
+            "metaDataVersion": "1.0.0",
             "category": "com.microchip.portal.contentRef",
             "content": {
-                "metaDataVersion": "1.0.1",
+                "metaDataVersion": "1.0.0",
                 "category": "com.microchip.device",
                 "name": "PIC18F47Q43",
                 "versionRange": "*"
@@ -73,10 +73,10 @@
         ],
 		"additionalData": {
 			"longDescription": {
-				"metaDataVersion": "1.0.1",
+				"metaDataVersion": "1.0.0",
 				"category": "com.microchip.portal.fileRef",
 				"content": {
-					"metaDataVersion": "1.0.1",
+					"metaDataVersion": "1.0.0",
 					"fileName": "./README.md",
 					"mimeType": "text/markdown"
 				}
