@@ -1,17 +1,17 @@
 /**
-  Blink Lab Source File
+  Timer1 Lab Source File
 
   Company:
     Microchip Technology Inc.
 
   File Name:
-    Blink.c
+    Timers.c
 
   Summary:
-    This is the source file for the Blink lab
+    This is the source file for the Timer1 lab
 
   Description:
-    This source file contains the code on how the Blink lab works.
+    This source file contains the code on how the Timer1 lab works.
  */
 
 /*
@@ -44,40 +44,46 @@
 #include "../../labs.h"
 
 /**
-  Section: Macro Declaration
+  Section: Local Variable Declarations
  */
-#define FLAG_COUNTER_MAX 3  // Maximum flag count to create 1.5 seconds delay
-
-/**
-  Section: Variable Declaration
- */
-static uint8_t flagCounter = 0;
+static uint8_t rotateReg;
 
 /*
                              Application    
  */
-void Blink(void) {
-    if (labState  == NOT_RUNNING) {
+void Timers(void) {
+
+    if (labState == NOT_RUNNING) {
         LEDs_SetLow();
+        LED_D2_SetHigh();
+
+        //Initialize temporary register to begin at 1
+        rotateReg = 1;
+
         Timer1_Start();
 
         labState = RUNNING;
     }
 
     if (labState == RUNNING) {
-        while(!Timer1_HasOverflowOccured());   
-        TMR1IF = 0;  
-        Timer1_Reload();    
-        flagCounter++;
+        while(!Timer1_HasOverflowOccured());       
+        TMR1IF = 0;                
+        Timer1_Reload();
 
-        if(flagCounter == FLAG_COUNTER_MAX){       
-            LED_D2_Toggle();    
-            flagCounter = 0;
-        }  
+        rotateReg <<= 1;
+
+        //Return to initial position of LED
+        if (rotateReg == LAST) {
+            rotateReg = 1;
+        }
+
+        //Determine which LED will light up
+        LEDs = (rotateReg << 4);
     }
 
     if (switchEvent) {
         Timer1_Stop();
+
         labState = NOT_RUNNING;
     }
 }

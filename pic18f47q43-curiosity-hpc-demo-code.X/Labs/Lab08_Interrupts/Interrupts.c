@@ -1,17 +1,17 @@
 /**
-  Blink Lab Source File
+  Interrupt Lab Source File
 
   Company:
     Microchip Technology Inc.
 
   File Name:
-    Blink.c
+    Interrupt.c
 
   Summary:
-    This is the source file for the Blink lab
+    This is the source file for the Interrupt lab
 
   Description:
-    This source file contains the code on how the Blink lab works.
+    This source file contains the code on how the Interrupt lab works.
  */
 
 /*
@@ -44,42 +44,57 @@
 #include "../../labs.h"
 
 /**
-  Section: Macro Declaration
+  Section: Local Function Prototypes
  */
-#define FLAG_COUNTER_MAX 3  // Maximum flag count to create 1.5 seconds delay
+void LAB_ISR(void);
 
 /**
-  Section: Variable Declaration
+  Section: Local Variable Declarations
  */
-static uint8_t flagCounter = 0;
+static uint8_t rotateReg;
 
 /*
                              Application    
  */
-void Blink(void) {
-    if (labState  == NOT_RUNNING) {
-        LEDs_SetLow();
-        Timer1_Start();
+void Interrupts(void) {
 
+    if (labState == NOT_RUNNING) {
+        LEDs_SetLow();
+        LED_D2_SetHigh();
+        
+        rotateReg = 1;
+       
+        INTERRUPT_GlobalInterruptEnable();
+        INTERRUPT_TMR0InterruptEnable();
+        
+        Timer0_OverflowCallbackRegister(LAB_ISR);
+ 
         labState = RUNNING;
     }
 
-    if (labState == RUNNING) {
-        while(!Timer1_HasOverflowOccured());   
-        TMR1IF = 0;  
-        Timer1_Reload();    
-        flagCounter++;
-
-        if(flagCounter == FLAG_COUNTER_MAX){       
-            LED_D2_Toggle();    
-            flagCounter = 0;
-        }  
+    if(labState == RUNNING){ 
+        // Do nothing. Just wait for an interrupt event 
     }
-
+    
     if (switchEvent) {
-        Timer1_Stop();
+        INTERRUPT_TMR0InterruptDisable();
+
+        INTERRUPT_GlobalInterruptDisable();
+
         labState = NOT_RUNNING;
     }
+}
+
+void LAB_ISR(void) {    
+    //If the last LED has been lit, restart the pattern    
+    if (rotateReg == 1) {
+        rotateReg = LAST;
+    }
+
+    rotateReg >>= 1;
+    
+    //Check which LED should be lit
+    LEDs = (rotateReg << 4);
 }
 /**
  End of File

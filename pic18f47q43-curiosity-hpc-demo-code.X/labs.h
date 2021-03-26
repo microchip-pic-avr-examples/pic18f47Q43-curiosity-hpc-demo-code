@@ -199,7 +199,7 @@ void PWM(void);
   @Param
     none
 */
-void Timer1(void);
+void Timers(void);
 
 /**
   @Summary
@@ -217,7 +217,7 @@ void Timer1(void);
   @Param
     none
 */
-void Interrupt(void);
+void Interrupts(void);
 
 /**
   @Summary

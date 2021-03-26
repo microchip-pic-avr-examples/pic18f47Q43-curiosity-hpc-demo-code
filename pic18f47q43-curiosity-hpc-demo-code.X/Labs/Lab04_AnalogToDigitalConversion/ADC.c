@@ -40,9 +40,7 @@
   Section: Included Files
  */
 
-#include "../../mcc_generated_files/pin_manager.h"
-#include "../../mcc_generated_files/adcc.h"
-#include "../../mcc_generated_files/uart1.h"
+#include "../../mcc_generated_files/system/system.h"
 #include "../../labs.h"
 
 /**
