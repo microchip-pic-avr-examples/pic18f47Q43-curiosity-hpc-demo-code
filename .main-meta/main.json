@@ -9,13 +9,13 @@
         "projectName": "pic18f47q43-curiosity-hpc-demo-code",
         "shortDescription": "Demo code for HPC board for PIC18-Q43 devices",
         "ide": {
-            "name": "MPLABX",
-            "semverRange": ">=5.40.0"
+            "name": "MPLAB X",
+            "semverRange": ">=5.45.0"
         },
         "compiler": [
 			{
 				"name": "XC8",
-				"semverRange": "^2.20.0"
+				"semverRange": "^2.21.0"
 			}
 		],
         "dfp": {
@@ -24,7 +24,7 @@
         },
         "configurator": {
             "name": "MCC",
-            "semverRange": ">=3.95.0"
+            "semverRange": ">=4.1.0"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -69,7 +69,8 @@
             "Getting Started",
             "Q43",
             "PIC18-Q43",
-            "Curiosity Board"				
+            "Curiosity Board",
+            "Melody"				
         ],
 		"additionalData": {
 			"longDescription": {
