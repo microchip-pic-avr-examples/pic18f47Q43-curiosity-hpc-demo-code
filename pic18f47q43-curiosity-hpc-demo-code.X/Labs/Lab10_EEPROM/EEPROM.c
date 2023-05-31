@@ -46,7 +46,7 @@
 /**
   Section: Macro Declaration
  */
-#define EEAddr    0x0000      // EEPROM starting address
+#define EEAddr    0x380000      // EEPROM starting address
 
 /**
   Section: Local Variable Declarations
@@ -68,10 +68,12 @@ void EEPROM(void) {
     if (labState == RUNNING) {
         //Get the top 4 MSBs of the ADC and write them to EEPROM
         adcResult = ADCC_GetSingleConversion(POT_CHANNEL) >> 12;
-        DATAEE_WriteByte(EEAddr, adcResult);
-
+        
+        NVM_UnlockKeySet(UNLOCK_KEY);
+        EEPROM_Write(EEAddr, adcResult);
+        
         //Load whatever is in EEPROM to the LED Display
-        ledDisplay = DATAEE_ReadByte(EEAddr);
+        ledDisplay = EEPROM_Read(EEAddr);
 
         //Determine which LEDs will light up
         LEDs = ledDisplay << 4;

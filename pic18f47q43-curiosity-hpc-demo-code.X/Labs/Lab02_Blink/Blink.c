@@ -59,15 +59,15 @@ static uint8_t flagCounter = 0;
 void Blink(void) {
     if (labState  == NOT_RUNNING) {
         LEDs_SetLow();
-        Timer1_Start();
+        TMR1_Start();
 
         labState = RUNNING;
     }
 
     if (labState == RUNNING) {
-        while(!Timer1_HasOverflowOccured());   
+        while(!TMR1_HasOverflowOccured());   
         TMR1IF = 0;  
-        Timer1_Reload();    
+        TMR1_Reload();    
         flagCounter++;
 
         if(flagCounter == FLAG_COUNTER_MAX){       
@@ -77,7 +77,7 @@ void Blink(void) {
     }
 
     if (switchEvent) {
-        Timer1_Stop();
+        TMR1_Stop();
         labState = NOT_RUNNING;
     }
 }

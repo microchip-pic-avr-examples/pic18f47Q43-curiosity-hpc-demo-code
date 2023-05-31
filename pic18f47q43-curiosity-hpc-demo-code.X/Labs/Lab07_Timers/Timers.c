@@ -60,15 +60,15 @@ void Timers(void) {
         //Initialize temporary register to begin at 1
         rotateReg = 1;
 
-        Timer1_Start();
+        TMR1_Start();
 
         labState = RUNNING;
     }
 
     if (labState == RUNNING) {
-        while(!Timer1_HasOverflowOccured());       
+        while(!TMR1_HasOverflowOccured());       
         TMR1IF = 0;                
-        Timer1_Reload();
+        TMR1_Reload();
 
         rotateReg <<= 1;
 
@@ -82,7 +82,7 @@ void Timers(void) {
     }
 
     if (switchEvent) {
-        Timer1_Stop();
+        TMR1_Stop();
 
         labState = NOT_RUNNING;
     }

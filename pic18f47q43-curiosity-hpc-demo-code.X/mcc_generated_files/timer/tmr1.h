@@ -1,52 +1,33 @@
 /**
-  TMR1 Generated Driver API Header File
-
-  @Company
-    Microchip Technology Inc.
-
-  @File Name
-    tmr1.h
-
-  @Summary
-    This is the generated header file for the TMR1 driver
-
-  @Description
-    This header file provides APIs for driver for TMR1.
-    Generation Information :
-        Driver Version    :  2.11
+ * TMR1 Generated Driver API Header File
+ *
+ * @file tmr1.h
+ *
+ * @defgroup tmr1 TMR1
+ *
+ * @brief This file contains the API prototypes and other data types for the TMR1 driver.
+ *
+ * @version TMR1 Driver Version 3.1.1
 */
 /*
-Copyright (c) [2012-2020] Microchip Technology Inc.  
+© [2023] Microchip Technology Inc. and its subsidiaries.
 
-    All rights reserved.
-
-    You are permitted to use the accompanying software and its derivatives 
-    with Microchip products. See the Microchip license agreement accompanying 
-    this software, if any, for additional info regarding your rights and 
-    obligations.
-    
-    MICROCHIP SOFTWARE AND DOCUMENTATION ARE PROVIDED "AS IS" WITHOUT 
-    WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT 
-    LIMITATION, ANY WARRANTY OF MERCHANTABILITY, TITLE, NON-INFRINGEMENT 
-    AND FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT WILL MICROCHIP OR ITS
-    LICENSORS BE LIABLE OR OBLIGATED UNDER CONTRACT, NEGLIGENCE, STRICT 
-    LIABILITY, CONTRIBUTION, BREACH OF WARRANTY, OR OTHER LEGAL EQUITABLE 
-    THEORY FOR ANY DIRECT OR INDIRECT DAMAGES OR EXPENSES INCLUDING BUT NOT 
-    LIMITED TO ANY INCIDENTAL, SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES, 
-    OR OTHER SIMILAR COSTS. 
-    
-    To the fullest extend allowed by law, Microchip and its licensors 
-    liability will not exceed the amount of fees, if any, that you paid 
-    directly to Microchip to use this software. 
-    
-    THIRD PARTY SOFTWARE:  Notwithstanding anything to the contrary, any 
-    third party software accompanying this software is subject to the terms 
-    and conditions of the third party's license agreement.  To the extent 
-    required by third party licenses covering such third party software, 
-    the terms of such license will apply in lieu of the terms provided in 
-    this notice or applicable license.  To the extent the terms of such 
-    third party licenses prohibit any of the restrictions described here, 
-    such restrictions will not apply to such third party software.
+    Subject to your compliance with these terms, you may use Microchip 
+    software and any derivatives exclusively with Microchip products. 
+    You are responsible for complying with 3rd party license terms  
+    applicable to your use of 3rd party software (including open source  
+    software) that may accompany Microchip software. SOFTWARE IS ?AS IS.? 
+    NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, APPLY TO THIS 
+    SOFTWARE, INCLUDING ANY IMPLIED WARRANTIES OF NON-INFRINGEMENT,  
+    MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT 
+    WILL MICROCHIP BE LIABLE FOR ANY INDIRECT, SPECIAL, PUNITIVE, 
+    INCIDENTAL OR CONSEQUENTIAL LOSS, DAMAGE, COST OR EXPENSE OF ANY 
+    KIND WHATSOEVER RELATED TO THE SOFTWARE, HOWEVER CAUSED, EVEN IF 
+    MICROCHIP HAS BEEN ADVISED OF THE POSSIBILITY OR THE DAMAGES ARE 
+    FORESEEABLE. TO THE FULLEST EXTENT ALLOWED BY LAW, MICROCHIP?S 
+    TOTAL LIABILITY ON ALL CLAIMS RELATED TO THE SOFTWARE WILL NOT 
+    EXCEED AMOUNT OF FEES, IF ANY, YOU PAID DIRECTLY TO MICROCHIP FOR 
+    THIS SOFTWARE.
 */
 
 #ifndef TMR1_H
@@ -58,330 +39,133 @@ Copyright (c) [2012-2020] Microchip Technology Inc.
 
 
 /**
- @ingroup timer0_driver
- @struct TMR_INTERFACE
- @brief This is an instance of TMR_INTERFACE for Timer module
+ * @ingroup tmr1
+ * @struct TMR_INTERFACE
+ * @brief This is an instance of TMR_INTERFACE for Timer module
  */
-extern const struct TMR_INTERFACE Timer1;
+extern const struct TMR_INTERFACE tmr1;
 
 /**
- * @brief This API initializes the Timer module.
- *        This routine must be called before any other Timer routines.
- * @param void.
- * @return void.
- *
- * @code
- * void main(void)
- * {
- *     Timer1_Initialize();
- *     
- *     while(1)
- *     {   
- *         Timer1_Tasks();
- *     }
- * }
- * @endcode
+ * @ingroup tmr1
+ * @brief Initializes the timer module.
+ *        This routine must be called before any other timer routines.
+ * @param None.
+ * @return None.
  */
-void Timer1_Initialize(void);
-
+void TMR1_Initialize(void);
 
 /**
- * @brief This function starts Timer
- *        Timer-0 should be initialized with Timer1_Initialize() before calling this API.
- * @param void.
- * @return void.
- *
- * @code
- * void main(void)
- * {
- *     Timer1_Initialize();
- *     
- *     //Start timer if it is not already started
- *     Timer1_Start();
- *     
- *     while(1)
- *     {
- *         Timer1_Tasks();
- *     }
- * }
- * @endcode
+ * @ingroup tmr1
+ * @brief Starts the timer.
+ * @pre The timer should be initialized with TMR1_Initialize() before calling this API.
+ * @param None.
+ * @return None.
  */
-void Timer1_Start(void);
+void TMR1_Start(void);
 
 /**
- * @brief This function stops Timer
- *        Timer-0 should be initialized with Timer1_Initialize() before calling this API.
- * @param void.
- * @return void.
- *
- * @code
- * void customAppCallback(void)
- * {
- *     static uint8_t counter;
- *     if(counter++ == 10)
- *     {
- *         counter = 0;
- *         //Stop timer after 10 timeouts
- *         Timer1_Stop();
- *     }
- * }
- * void main(void)
- * {
- *     Timer1_Initialize();
- *     
- *     while(1)
- *     {
- *         Timer1_Tasks();
- *     }
- * }
- * @endcode
+ * @ingroup tmr1
+ * @brief Stops the timer.
+ * @pre The timer should be initialized with TMR1_Initialize() before calling this API.
+ * @param None.
+ * @return None.
  */
-void Timer1_Stop(void);
+void TMR1_Stop(void);
 
 /**
- * @brief This function reads the 16-bits from TMR1 register.
- *        Timer should be initialized with Timer1_Initialize() before calling this API.
- * @param void.
- * @return 16-bit data from TMR1 register.
- *
- * @code
- * void main(void)
- * {
- *     Timer1_Initialize();
- *     
- *     //Start timer if it is not already started
- *     Timer1_Start();
- *     
- *     while(1)
- *     {
- *         if(Timer1_Read() == 0x8000)
- *         {
- *             //do something
- *         }
- *     }
- * }
- * @endcode
+ * @ingroup tmr1
+ * @brief Reads the 16-bit from the TMR1 register.
+ *        The Timer should be initialized with TMR1_Initialize() before calling this API.
+ * @param None.
+ * @return uint16_t - 16-bit data from the TMR1 register.
  */
-uint16_t Timer1_Read(void);
+uint16_t TMR1_Read(void);
 
 /**
- * @brief This function writes 16-bit value to TMR1 register.
- *        Timer should be initialized with Timer1_Initialize() before calling this API.
- * @param 16-bit value to be written to TMR1 register.
- * @return void.
- *
- * @code
- * void main(void)
- * {
- *     Timer1_Initialize();
- *     
- *     while(1)
- *     {
- *         if(Timer1_Read() == 0x0)
- *         {
- *             Timer1_Write(0x8000)
- *         }
- *     }
- * }
- * @endcode
+ * @ingroup tmr1
+ * @brief Writes the 16-bit value to the TMR1 register.
+ * @pre The timer should be initialized with TMR1_Initialize() before calling this API.
+ * @param size_t timerVal - 16-bit value written to the TMR1 register.
+ * @return None.
  */
-void Timer1_Write(size_t timerVal);
+void TMR1_Write(size_t timerVal);
 
 /**
- * @brief This function loads 8 bit value to TMR1 register.
- *        Timer should be initialized with Timer1_Initialize() before calling this API.
- * @param void.
- * @return void.
- *
- * @code
- * void main(void)
- * {
- *     Timer1_Initialize();
- *     
- *     while(1)
- *     {
- *         if(some_condition)
- *         {
- *             //Change the period value of TMR1
- *             Timer1_Reload();
- *         }
- *     }
- * }
- * @endcode
+ * @ingroup tmr1
+ * @brief Loads the 8-bit value to the TMR1 register.
+ * @pre The timer should be initialized with TMR1_Initialize() before calling this API.
+ * @param None.
+ * @return None.
  */
-void Timer1_Reload(void);
-
+void TMR1_Reload(void);
 
 /**
- * @brief This function starts the single pulse acquisition in TMR1 gate operation.
- *        This function must be used when the TMR1 gate is enabled.
- * @param void.
- * @return void.
- *
- * @code
- * uint16_t xVal;
- *   uint16_t yVal;
- *
- *   // enable TMR1 singlepulse mode
- *   Timer1_StartSinglePulseAcquistion();
- *
- *   // check TMR1 gate status
- *   if(Timer1_CheckGateValueStatus()== 0)
- *       xVal = Timer1_Read();
- *
- *   // wait untill gate interrupt occured
- *   while(TMR1GIF == 0)
- *   {
- *   }
- *
- *   yVal = Timer1_Read();
- * @endcode
+ * @ingroup tmr1
+ * @brief Loads the 16-bit value to the timer1ReloadVal variable.
+ * @param periodVal - 16-bit value. 
+ * @return None.
  */
-
-void Timer1_StartSinglePulseAcquisition(void);
-
-/**
-  @Summary
-    Check the current state of Timer1 gate.
-
-  @Description
-    This function reads the TMR1 gate value and return it.
-    This function must be used when the TMR1 gate is enabled.
-
-  @Preconditions
-    Initialize  the TMR1 with gate enable before calling this function.
-
-  @Param
-    None
-
-  @Returns
-    None
-
-  @Example
-    <code>
-    uint16_t xVal;
-    uint16_t yVal;
-
-    // enable TMR1 singlepulse mode
-    Timer1_StartSinglePulseAcquistion();
-
-    // check TMR1 gate status
-    if(Timer1_CheckGateValueStatus()== 0)
-        xVal = Timer1_Read();
-
-    // wait untill gate interrupt occured
-    while(TMR1IF == 0)
-    {
-    }
-
-    yVal = Timer1_Read();
-    </code>
-*/
-uint8_t Timer1_CheckGateValueStatus(void);
-
+void TMR1_PeriodCountSet(size_t periodVal);
 
 /**
- * @brief Setter function for Timer overflow Callback.
- * @param CallbackHandler - Pointer to custom Callback.
- * @return void
- *
- * @code
- * void customOverflowCallback(void)
- * {
- *    //Custom ISR code
- * }
- *
- * void main(void)
- * {
- *     Timer1_Initialize();
- *     Timer1_OverflowCallbackRegister(customOverflowCallback);
- *
- *     while(1)
- *     {
- *     }
- * }
- * @endcode
+ * @ingroup tmr1
+ * @brief Starts the single pulse acquisition in TMR1 gate operation.
+ * @pre This function must be used when the TMR1 gate is enabled.
+ * @param None.
+ * @return None.
  */
- void Timer1_OverflowCallbackRegister(void (* CallbackHandler)(void));
+void TMR1_StartSinglePulseAcquisition(void);
 
 /**
- * @brief This function performs tasks to be executed on timer overflow event
- * @param void
- * @return void
- *
- * @code
- * void main(void)
- * {
- *     Timer1_Initialize();
- *
- *     while(1)
- *     {
- *         Timer1_Tasks();
- *     }
- * }
- * @endcode
+ * @ingroup tmr1
+ * @brief Reads the TMR1 gate value and returns it.
+ * @pre This function must be used when the TMR1 gate is enabled.
+ * @param None.
+ * @return uint8_t - Gate value status.
  */
-void Timer1_Tasks(void);
-
-/**
-  @Summary
-    Boolean routine to poll or to check for the overflow flag on the fly.
-
-  @Description
-    This function is called to check for the timer overflow flag.
-    This function is usd in timer polling method.
-
-  @Preconditions
-    Initialize  the TMR1 module before calling this routine.
-
-  @Param
-    None
-
-  @Returns
-    true - timer overflow has occured.
-    false - timer overflow has not occured.
-
-  @Example
-    <code>
-    while(1)
-    {
-        // check the overflow flag
-        if(Timer1_HasOverflowOccured())
-        {
-            // Do something else...
-
-            // clear the TMR1 interrupt flag
-            TMR1IF = 0;
-
-            // Reload the TMR1 value
-            Timer1_Reload();
-        }
-    }
-    </code>
-*/
-bool Timer1_HasOverflowOccured(void);
+uint8_t TMR1_CheckGateValueStatus(void);
 
 
 /**
-  @Summary
-    Timer Gate Interrupt Service Routine
+ * @ingroup tmr1
+ * @brief Setter function for the Timer overflow callback.
+ * @param void (* CallbackHandler)(void) - Pointer to the custom callback.
+ * @return None.
+ */
+ void TMR1_OverflowCallbackRegister(void (* CallbackHandler)(void));
 
-  @Description
-    Timer Gate Interrupt Service Routine is called by the Interrupt Manager.
-    User can write the code in this function.
+/**
+ * @ingroup tmr1
+ * @brief Performs the tasks to be executed on timer overflow event.
+ * @param None.
+ * @return None.
+ */
+void TMR1_Tasks(void);
 
-  @Preconditions
-    Initialize  the TMR1 module with gate interrupt before calling this isr.
+/**
+ * @ingroup tmr1
+ * @brief Checks for the timer overflow flag when in Polling mode.
+ * @param None.
+ * @retval true  - Timer overflow has occured.
+ * @retval false - Timer overflow has not occured.
+ */
+bool TMR1_HasOverflowOccured(void);
 
-  @Param
-    None
 
-  @Returns
-    None
+/**
+ * @ingroup tmr1
+ * @brief Timer Gate Interrupt Service Routine (ISR) called by the Interrupt Manager.
+ * @param None.
+ * @return None.
+ */
+void TMR1_GateISR(void);
 
-  @Example
-    None
-*/
-void Timer1_GATE_ISR(void);
+/**
+ * @ingroup tmr1
+ * @brief Setter function for the Timer gate callback.
+ * @param void (* CallbackHandler)(void) - Pointer to the custom callback.
+ * @return None.
+ */
+ void TMR1_GateCallbackRegister(void (* CallbackHandler)(void));
 
 #endif // TMR1_H

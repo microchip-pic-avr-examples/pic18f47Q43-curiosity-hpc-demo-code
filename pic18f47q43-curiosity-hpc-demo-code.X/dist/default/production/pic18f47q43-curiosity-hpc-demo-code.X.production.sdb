@@ -1,0 +1,1888 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F47Q43 ]
+[d frameptr 1249 ]
+"64 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab04_AnalogToDigitalConversion/ADC.c
+[e E16451 . `uc
+channel_VSS 59
+channel_Temp 60
+channel_DAC1 61
+channel_FVR_Buffer1 62
+channel_FVR_Buffer2 63
+POT_CHANNEL 0
+]
+"68 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab05_VariableSpeedRotate/VSR.c
+[e E16451 . `uc
+channel_VSS 59
+channel_Temp 60
+channel_DAC1 61
+channel_FVR_Buffer1 62
+channel_FVR_Buffer2 63
+POT_CHANNEL 0
+]
+"70 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab06_PulseWidthModulation/PWM.c
+[e E16451 . `uc
+channel_VSS 59
+channel_Temp 60
+channel_DAC1 61
+channel_FVR_Buffer1 62
+channel_FVR_Buffer2 63
+POT_CHANNEL 0
+]
+"70 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab10_EEPROM/EEPROM.c
+[e E16451 . `uc
+channel_VSS 59
+channel_Temp 60
+channel_DAC1 61
+channel_FVR_Buffer1 62
+channel_FVR_Buffer2 63
+POT_CHANNEL 0
+]
+"100 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/adc/src/adcc.c
+[e E16448 . `uc
+channel_VSS 59
+channel_Temp 60
+channel_DAC1 61
+channel_FVR_Buffer1 62
+channel_FVR_Buffer2 63
+POT_CHANNEL 0
+]
+"53 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/nvm/src/nvm.c
+[e E16450 . `uc
+NVM_OK 0
+NVM_ERROR 1
+]
+"80 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/timer/src/tmr2.c
+[e E16464 . `uc
+TMR2_ROP_STARTS_TMRON 0
+TMR2_ROP_STARTS_TMRON_ERSHIGH 1
+TMR2_ROP_STARTS_TMRON_ERSLOW 2
+TMR2_ROP_RESETS_ERSBOTHEDGE 3
+TMR2_ROP_RESETS_ERSRISINGEDGE 4
+TMR2_ROP_RESETS_ERSFALLINGEDGE 5
+TMR2_ROP_RESETS_ERSLOW 6
+TMR2_ROP_RESETS_ERSHIGH 7
+TMR2_OS_STARTS_TMRON 8
+TMR2_OS_STARTS_ERSRISINGEDGE 9
+TMR2_OS_STARTS_ERSFALLINGEDGE 10
+TMR2_OS_STARTS_ERSBOTHEDGE 11
+TMR2_OS_STARTS_ERSFIRSTRISINGEDGE 12
+TMR2_OS_STARTS_ERSFIRSTFALLINGEDGE 13
+TMR2_OS_STARTS_ERSRISINGEDGEDETECT 14
+TMR2_OS_STARTS_ERSFALLINGEDGEDETECT 15
+TMR2_OS_STARTS_TMRON_ERSHIGH 22
+TMR2_OS_STARTS_TMRON_ERSLOW 23
+TMR2_MS_STARTS_TMRON_ERSRISINGEDGEDETECT 17
+TMR2_MS_STARTS_TMRON_ERSFALLINGEDGEDETECT 18
+TMR2_MS_STARTS_TMRON_ERSBOTHEDGE 19
+]
+"86
+[e E16487 . `uc
+TMR2_T2CKIPPS_PIN 0
+TMR2_TMR4_POSTSCALED 2
+TMR2_TMR6_POSTSCALED 3
+TMR2_CCP1OUT 4
+TMR2_CCP2OUT 5
+TMR2_CCP3OUT 6
+TMR2_PWM1_OUT1 7
+TMR2_PWM1_OUT2 8
+TMR2_PWM2_OUT1 9
+TMR2_PWM2_OUT2 10
+TMR2_PWM3_OUT1 11
+TMR2_PWM3_OUT2 12
+TMR2_CMP1OUT 15
+TMR2_CMP2OUT 16
+TMR2_ZCDOUT 17
+TMR2_CLC1_OUT 18
+TMR2_CLC2_OUT 19
+TMR2_CLC3_OUT 20
+TMR2_CLC4_OUT 21
+TMR2_CLC5_OUT 22
+TMR2_CLC6_OUT 23
+TMR2_CLC7_OUT 24
+TMR2_CLC8_OUT 25
+TMR2_UART1_RX_EDGE 26
+TMR2_UART1_TX_EDGE 27
+TMR2_UART2_RX_EDGE 28
+TMR2_UART2_TX_EDGE 29
+TMR2_UART3_RX_EDGE 30
+TMR2_UART3_TX_EDGE 31
+TMR2_UART4_RX_EDGE 32
+TMR2_UART4_TX_EDGE 33
+TMR2_UART5_RX_EDGE 34
+TMR2_UART5_TX_EDGE 35
+]
+"1 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"152 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+[v _pad pad `(v  1 s 1 pad ]
+"470
+[v _dtoa dtoa `(v  1 s 1 dtoa ]
+"1048
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+"1546
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"50 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab01_HelloWorld/HelloWorld.c
+[v _HelloWorld HelloWorld `(v  1 e 1 0 ]
+"59 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab02_Blink/Blink.c
+[v _Blink Blink `(v  1 e 1 0 ]
+"54 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab03_Rotate/Rotate.c
+[v _Rotate Rotate `(v  1 e 1 0 ]
+"54 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab04_AnalogToDigitalConversion/ADC.c
+[v _ADC ADC `(v  1 e 1 0 ]
+"55 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab05_VariableSpeedRotate/VSR.c
+[v _VSR VSR `(v  1 e 1 0 ]
+"60 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab06_PulseWidthModulation/PWM.c
+[v _PWM PWM `(v  1 e 1 0 ]
+"84
+[v _PWM_Output_D5_Enable PWM_Output_D5_Enable `(v  1 e 1 0 ]
+"97
+[v _PWM_Output_D5_Disable PWM_Output_D5_Disable `(v  1 e 1 0 ]
+"54 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab07_Timers/Timers.c
+[v _Timers Timers `(v  1 e 1 0 ]
+"59 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab08_Interrupts/Interrupts.c
+[v _Interrupts Interrupts `(v  1 e 1 0 ]
+"88
+[v _LAB_ISR LAB_ISR `(v  1 e 1 0 ]
+"55 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab09_SleepWakeup/SleepWakeUp.c
+[v _SleepWakeUp SleepWakeUp `(v  1 e 1 0 ]
+"60 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab10_EEPROM/EEPROM.c
+[v _EEPROM EEPROM `(v  1 e 1 0 ]
+"46 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"100
+[v _checkButtonS1 checkButtonS1 `(v  1 e 1 0 ]
+"112
+[v _nextLab nextLab `(v  1 e 1 0 ]
+"45 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/adc/src/adcc.c
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+"121
+[v _ADCC_GetSingleConversion ADCC_GetSingleConversion `(us  1 e 2 0 ]
+"38 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/clc/src/clc1.c
+[v _CLC1_Initialize CLC1_Initialize `(v  1 e 1 0 ]
+"43 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/nvm/src/nvm.c
+[v _NVM_Initialize NVM_Initialize `(v  1 e 1 0 ]
+"65
+[v _NVM_StatusClear NVM_StatusClear `(v  1 e 1 0 ]
+"70
+[v _NVM_UnlockKeySet NVM_UnlockKeySet `(v  1 e 1 0 ]
+"293
+[v _EEPROM_Read EEPROM_Read `(uc  1 e 1 0 ]
+"309
+[v _EEPROM_Write EEPROM_Write `(v  1 e 1 0 ]
+"50 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/pwm/src/pwm3_16bit.c
+[v _PWM3_16BIT_Initialize PWM3_16BIT_Initialize `(v  1 e 1 0 ]
+"137
+[v _PWM3_16BIT_SetSlice1Output1DutyCycleRegister PWM3_16BIT_SetSlice1Output1DutyCycleRegister `(v  1 e 1 0 ]
+"149
+[v _PWM3_16BIT_LoadBufferRegisters PWM3_16BIT_LoadBufferRegisters `(v  1 e 1 0 ]
+"179
+[v _PWM3_16BIT_Slice1Output1_SetInterruptHandler PWM3_16BIT_Slice1Output1_SetInterruptHandler `(v  1 e 1 0 ]
+"184
+[v _PWM3_16BIT_Slice1Output2_SetInterruptHandler PWM3_16BIT_Slice1Output2_SetInterruptHandler `(v  1 e 1 0 ]
+"189
+[v _PWM3_16BIT_Period_SetInterruptHandler PWM3_16BIT_Period_SetInterruptHandler `(v  1 e 1 0 ]
+"194
+[v _PWM3_16BIT_Slice1Output1_DefaultInterruptHandler PWM3_16BIT_Slice1Output1_DefaultInterruptHandler `(v  1 s 1 PWM3_16BIT_Slice1Output1_DefaultInterruptHandler ]
+"200
+[v _PWM3_16BIT_Slice1Output2_DefaultInterruptHandler PWM3_16BIT_Slice1Output2_DefaultInterruptHandler `(v  1 s 1 PWM3_16BIT_Slice1Output2_DefaultInterruptHandler ]
+"206
+[v _PWM3_16BIT_Period_DefaultInterruptHandler PWM3_16BIT_Period_DefaultInterruptHandler `(v  1 s 1 PWM3_16BIT_Period_DefaultInterruptHandler ]
+"37 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/system/src/clock.c
+[v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
+"42 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+"80
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+"106
+[v _INT0_CallBack INT0_CallBack `(v  1 e 1 0 ]
+"115
+[v _INT0_SetInterruptHandler INT0_SetInterruptHandler `(v  1 e 1 0 ]
+"119
+[v _INT0_DefaultInterruptHandler INT0_DefaultInterruptHandler `(v  1 e 1 0 ]
+"132
+[v _INT1_CallBack INT1_CallBack `(v  1 e 1 0 ]
+"141
+[v _INT1_SetInterruptHandler INT1_SetInterruptHandler `(v  1 e 1 0 ]
+"145
+[v _INT1_DefaultInterruptHandler INT1_DefaultInterruptHandler `(v  1 e 1 0 ]
+"158
+[v _INT2_CallBack INT2_CallBack `(v  1 e 1 0 ]
+"167
+[v _INT2_SetInterruptHandler INT2_SetInterruptHandler `(v  1 e 1 0 ]
+"171
+[v _INT2_DefaultInterruptHandler INT2_DefaultInterruptHandler `(v  1 e 1 0 ]
+"38 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"135
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
+"37 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/system/src/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"49 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/timer/src/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+"74
+[v _TMR0_Start TMR0_Start `(v  1 e 1 0 ]
+"79
+[v _TMR0_Stop TMR0_Stop `(v  1 e 1 0 ]
+"100
+[v _TMR0_Reload TMR0_Reload `(v  1 e 1 0 ]
+"106
+[v _TMR0_OverflowISR TMR0_OverflowISR `(v  1 e 1 0 ]
+"116
+[v _TMR0_OverflowCallbackRegister TMR0_OverflowCallbackRegister `(v  1 e 1 0 ]
+"121
+[v _TMR0_DefaultOverflowCallback TMR0_DefaultOverflowCallback `(v  1 s 1 TMR0_DefaultOverflowCallback ]
+"59 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/timer/src/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+"89
+[v _TMR1_Start TMR1_Start `(v  1 e 1 0 ]
+"95
+[v _TMR1_Stop TMR1_Stop `(v  1 e 1 0 ]
+"115
+[v _TMR1_Write TMR1_Write `(v  1 e 1 0 ]
+"137
+[v _TMR1_Reload TMR1_Reload `(v  1 e 1 0 ]
+"158
+[v _TMR1_OverflowCallbackRegister TMR1_OverflowCallbackRegister `(v  1 e 1 0 ]
+"163
+[v _TMR1_DefaultOverflowCallback TMR1_DefaultOverflowCallback `(v  1 s 1 TMR1_DefaultOverflowCallback ]
+"169
+[v _TMR1_HasOverflowOccured TMR1_HasOverflowOccured `(a  1 e 1 0 ]
+"184
+[v _TMR1_GateCallbackRegister TMR1_GateCallbackRegister `(v  1 e 1 0 ]
+"189
+[v _TMR1_DefaultGateCallback TMR1_DefaultGateCallback `(v  1 s 1 TMR1_DefaultGateCallback ]
+"195
+[v _TMR1_Tasks TMR1_Tasks `(v  1 e 1 0 ]
+"57 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/timer/src/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"92
+[v _TMR2_Start TMR2_Start `(v  1 e 1 0 ]
+"98
+[v _TMR2_Stop TMR2_Stop `(v  1 e 1 0 ]
+"117
+[v _TMR2_PeriodCountSet TMR2_PeriodCountSet `(v  1 e 1 0 ]
+"122
+[v _TMR2_OverflowCallbackRegister TMR2_OverflowCallbackRegister `(v  1 e 1 0 ]
+"126
+[v _TMR2_DefaultOverflowCallback TMR2_DefaultOverflowCallback `(v  1 s 1 TMR2_DefaultOverflowCallback ]
+"131
+[v _TMR2_Tasks TMR2_Tasks `(v  1 e 1 0 ]
+"95 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/uart/src/uart1.c
+[v _UART1_Initialize UART1_Initialize `(v  1 e 1 0 ]
+"146
+[v _UART1_Deinitialize UART1_Deinitialize `(v  1 e 1 0 ]
+"179
+[v _UART1_TransmitEnable UART1_TransmitEnable `T(v  1 e 1 0 ]
+"184
+[v _UART1_TransmitDisable UART1_TransmitDisable `T(v  1 e 1 0 ]
+"199
+[v _UART1_AutoBaudSet UART1_AutoBaudSet `T(v  1 e 1 0 ]
+"212
+[v _UART1_AutoBaudQuery UART1_AutoBaudQuery `T(a  1 e 1 0 ]
+"232
+[v _UART1_IsRxReady UART1_IsRxReady `(a  1 e 1 0 ]
+"237
+[v _UART1_IsTxReady UART1_IsTxReady `(a  1 e 1 0 ]
+"242
+[v _UART1_IsTxDone UART1_IsTxDone `(a  1 e 1 0 ]
+"247
+[v _UART1_ErrorGet UART1_ErrorGet `(ui  1 e 2 0 ]
+"271
+[v _UART1_Read UART1_Read `(uc  1 e 1 0 ]
+"277
+[v _UART1_Write UART1_Write `(v  1 e 1 0 ]
+"287
+[v _UART1_DefaultFramingErrorCallback UART1_DefaultFramingErrorCallback `(v  1 s 1 UART1_DefaultFramingErrorCallback ]
+"292
+[v _UART1_DefaultOverrunErrorCallback UART1_DefaultOverrunErrorCallback `(v  1 s 1 UART1_DefaultOverrunErrorCallback ]
+"297
+[v _UART1_DefaultParityErrorCallback UART1_DefaultParityErrorCallback `(v  1 s 1 UART1_DefaultParityErrorCallback ]
+"302
+[v _UART1_FramingErrorCallbackRegister UART1_FramingErrorCallbackRegister `(v  1 e 1 0 ]
+"310
+[v _UART1_OverrunErrorCallbackRegister UART1_OverrunErrorCallbackRegister `(v  1 e 1 0 ]
+"318
+[v _UART1_ParityErrorCallbackRegister UART1_ParityErrorCallbackRegister `(v  1 e 1 0 ]
+"66 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X/labs.h
+[v _labNumber labNumber `uc  1 e 1 0 ]
+"67
+[v _switchEvent switchEvent `uc  1 e 1 0 ]
+"68
+[v _labState labState `uc  1 e 1 0 ]
+"69
+[v _btnState btnState `uc  1 e 1 0 ]
+[s S882 . 1 `uc 1 GO 1 0 :1:0 
+]
+"533 C:/Users/c50931/.mchp_packs/Microchip/PIC18F-Q_DFP/1.18.389/xc8\pic\include\proc\pic18f47q43.h
+[s S884 . 1 `uc 1 NOT_DONE 1 0 :1:0 
+]
+[s S886 . 1 `uc 1 nDONE 1 0 :1:0 
+]
+[s S888 . 1 `uc 1 NVMGO 1 0 :1:0 
+]
+[u S890 . 1 `S882 1 . 1 0 `S884 1 . 1 0 `S886 1 . 1 0 `S888 1 . 1 0 ]
+[v _NVMCON0bits NVMCON0bits `VES890  1 e 1 @64 ]
+[s S907 . 1 `uc 1 CMD 1 0 :3:0 
+`uc 1 . 1 0 :4:3 
+`uc 1 WRERR 1 0 :1:7 
+]
+"573
+[s S911 . 1 `uc 1 NVMCMD 1 0 :3:0 
+]
+[u S913 . 1 `S907 1 . 1 0 `S911 1 . 1 0 ]
+[v _NVMCON1bits NVMCON1bits `VES913  1 e 1 @65 ]
+"593
+[v _NVMLOCK NVMLOCK `VEuc  1 e 1 @66 ]
+"622
+[v _NVMADRL NVMADRL `VEuc  1 e 1 @67 ]
+"692
+[v _NVMADRH NVMADRH `VEuc  1 e 1 @68 ]
+"762
+[v _NVMADRU NVMADRU `VEuc  1 e 1 @69 ]
+"827
+[v _NVMDATL NVMDATL `VEuc  1 e 1 @70 ]
+"897
+[v _NVMDATH NVMDATH `VEuc  1 e 1 @71 ]
+[s S321 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 PS 1 0 :5:1 
+]
+"2690
+[s S324 . 1 `uc 1 SWDTEN 1 0 :1:0 
+`uc 1 WDTPS 1 0 :5:1 
+]
+[s S327 . 1 `uc 1 WDTSEN 1 0 :1:0 
+`uc 1 PS0 1 0 :1:1 
+`uc 1 PS1 1 0 :1:2 
+`uc 1 PS2 1 0 :1:3 
+`uc 1 PS3 1 0 :1:4 
+`uc 1 PS4 1 0 :1:5 
+]
+[s S334 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 WDTPS0 1 0 :1:1 
+`uc 1 WDTPS1 1 0 :1:2 
+`uc 1 WDTPS2 1 0 :1:3 
+`uc 1 WDTPS3 1 0 :1:4 
+`uc 1 WDTPS4 1 0 :1:5 
+]
+[u S341 . 1 `S321 1 . 1 0 `S324 1 . 1 0 `S327 1 . 1 0 `S334 1 . 1 0 ]
+[v _WDTCON0bits WDTCON0bits `VES341  1 e 1 @120 ]
+"5140
+[v _ACTCON ACTCON `VEuc  1 e 1 @172 ]
+"5210
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @173 ]
+"5350
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @175 ]
+"5390
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @176 ]
+"5448
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @177 ]
+"5650
+[v _OSCEN OSCEN `VEuc  1 e 1 @179 ]
+"6339
+[v _CLCDATA CLCDATA `VEuc  1 e 1 @212 ]
+[s S847 . 1 `uc 1 CLC1OUT 1 0 :1:0 
+`uc 1 CLC2OUT 1 0 :1:1 
+`uc 1 CLC3OUT 1 0 :1:2 
+`uc 1 CLC4OUT 1 0 :1:3 
+`uc 1 CLC5OUT 1 0 :1:4 
+`uc 1 CLC6OUT 1 0 :1:5 
+`uc 1 CLC7OUT 1 0 :1:6 
+`uc 1 CLC8OUT 1 0 :1:7 
+]
+"6356
+[u S856 . 1 `S847 1 . 1 0 ]
+[v _CLCDATAbits CLCDATAbits `VES856  1 e 1 @212 ]
+"6401
+[v _CLCSELECT CLCSELECT `VEuc  1 e 1 @213 ]
+"6441
+[v _CLCnCON CLCnCON `VEuc  1 e 1 @214 ]
+"6511
+[v _CLCnPOL CLCnPOL `VEuc  1 e 1 @215 ]
+"6556
+[v _CLCnSEL0 CLCnSEL0 `VEuc  1 e 1 @216 ]
+"6626
+[v _CLCnSEL1 CLCnSEL1 `VEuc  1 e 1 @217 ]
+"6696
+[v _CLCnSEL2 CLCnSEL2 `VEuc  1 e 1 @218 ]
+"6766
+[v _CLCnSEL3 CLCnSEL3 `VEuc  1 e 1 @219 ]
+"6836
+[v _CLCnGLS0 CLCnGLS0 `VEuc  1 e 1 @220 ]
+"6898
+[v _CLCnGLS1 CLCnGLS1 `VEuc  1 e 1 @221 ]
+"6960
+[v _CLCnGLS2 CLCnGLS2 `VEuc  1 e 1 @222 ]
+"7022
+[v _CLCnGLS3 CLCnGLS3 `VEuc  1 e 1 @223 ]
+"8624
+[v _PPSLOCK PPSLOCK `VEuc  1 e 1 @512 ]
+[s S203 . 1 `uc 1 PPSLOCKED 1 0 :1:0 
+]
+"8634
+[u S205 . 1 `S203 1 . 1 0 ]
+[v _PPSLOCKbits PPSLOCKbits `VES205  1 e 1 @512 ]
+"9036
+[v _RA7PPS RA7PPS `VEuc  1 e 1 @520 ]
+"9876
+[v _RC6PPS RC6PPS `VEuc  1 e 1 @535 ]
+"14330
+[v _U1RXPPS U1RXPPS `VEuc  1 e 1 @626 ]
+"15026
+[v _RC4I2C RC4I2C `VEuc  1 e 1 @646 ]
+"15158
+[v _RC3I2C RC3I2C `VEuc  1 e 1 @647 ]
+"15290
+[v _RB2I2C RB2I2C `VEuc  1 e 1 @648 ]
+"15422
+[v _RB1I2C RB1I2C `VEuc  1 e 1 @649 ]
+"16599
+[v _U1RXB U1RXB `VEuc  1 e 1 @673 ]
+"16637
+[v _U1RXCHK U1RXCHK `VEuc  1 e 1 @674 ]
+"16657
+[v _U1TXB U1TXB `VEuc  1 e 1 @675 ]
+"16695
+[v _U1TXCHK U1TXCHK `VEuc  1 e 1 @676 ]
+"16722
+[v _U1P1L U1P1L `VEuc  1 e 1 @677 ]
+"16742
+[v _U1P1H U1P1H `VEuc  1 e 1 @678 ]
+"16769
+[v _U1P2L U1P2L `VEuc  1 e 1 @679 ]
+"16789
+[v _U1P2H U1P2H `VEuc  1 e 1 @680 ]
+"16816
+[v _U1P3L U1P3L `VEuc  1 e 1 @681 ]
+"16836
+[v _U1P3H U1P3H `VEuc  1 e 1 @682 ]
+"16856
+[v _U1CON0 U1CON0 `VEuc  1 e 1 @683 ]
+[s S2510 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 MODE3 1 0 :1:3 
+]
+"16889
+[s S2515 . 1 `uc 1 U1MODE 1 0 :4:0 
+`uc 1 U1RXEN 1 0 :1:4 
+`uc 1 U1TXEN 1 0 :1:5 
+`uc 1 U1ABDEN 1 0 :1:6 
+`uc 1 U1BRGS 1 0 :1:7 
+]
+[s S2521 . 1 `uc 1 U1MODE0 1 0 :1:0 
+`uc 1 U1MODE1 1 0 :1:1 
+`uc 1 U1MODE2 1 0 :1:2 
+`uc 1 U1MODE3 1 0 :1:3 
+]
+[s S2526 . 1 `uc 1 MODE 1 0 :4:0 
+`uc 1 RXEN 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 ABDEN 1 0 :1:6 
+`uc 1 BRGS 1 0 :1:7 
+]
+[u S2532 . 1 `S2510 1 . 1 0 `S2515 1 . 1 0 `S2521 1 . 1 0 `S2526 1 . 1 0 ]
+[v _U1CON0bits U1CON0bits `VES2532  1 e 1 @683 ]
+"16984
+[v _U1CON1 U1CON1 `VEuc  1 e 1 @684 ]
+[s S2474 . 1 `uc 1 SENDB 1 0 :1:0 
+`uc 1 BRKOVR 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 RXBIMD 1 0 :1:3 
+`uc 1 WUE 1 0 :1:4 
+`uc 1 . 1 0 :2:5 
+`uc 1 ON 1 0 :1:7 
+]
+"17009
+[s S2482 . 1 `uc 1 U1SENDB 1 0 :1:0 
+`uc 1 U1BRKOVR 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 U1RXBIMD 1 0 :1:3 
+`uc 1 U1WUE 1 0 :1:4 
+`uc 1 . 1 0 :2:5 
+`uc 1 U1ON 1 0 :1:7 
+]
+[u S2490 . 1 `S2474 1 . 1 0 `S2482 1 . 1 0 ]
+[v _U1CON1bits U1CON1bits `VES2490  1 e 1 @684 ]
+"17064
+[v _U1CON2 U1CON2 `VEuc  1 e 1 @685 ]
+"17213
+[v _U1BRGL U1BRGL `VEuc  1 e 1 @686 ]
+"17233
+[v _U1BRGH U1BRGH `VEuc  1 e 1 @687 ]
+"17253
+[v _U1FIFO U1FIFO `VEuc  1 e 1 @688 ]
+[s S2628 . 1 `uc 1 RXBF 1 0 :1:0 
+`uc 1 RXBE 1 0 :1:1 
+`uc 1 XON 1 0 :1:2 
+`uc 1 RXIDL 1 0 :1:3 
+`uc 1 TXBF 1 0 :1:4 
+`uc 1 TXBE 1 0 :1:5 
+`uc 1 STPMD 1 0 :1:6 
+`uc 1 TXWRE 1 0 :1:7 
+]
+"17288
+[s S2637 . 1 `uc 1 U1RXBF 1 0 :1:0 
+`uc 1 U1RXBE 1 0 :1:1 
+`uc 1 U1XON 1 0 :1:2 
+`uc 1 U1RXIDL 1 0 :1:3 
+`uc 1 U1TXBF 1 0 :1:4 
+`uc 1 U1TXBE 1 0 :1:5 
+`uc 1 U1STPMD 1 0 :1:6 
+`uc 1 U1TXWRE 1 0 :1:7 
+]
+[s S2646 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 U1RCIDL 1 0 :1:3 
+]
+[s S2649 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 RCIDL 1 0 :1:3 
+]
+[u S2652 . 1 `S2628 1 . 1 0 `S2637 1 . 1 0 `S2646 1 . 1 0 `S2649 1 . 1 0 ]
+[v _U1FIFObits U1FIFObits `VES2652  1 e 1 @688 ]
+"17383
+[v _U1UIR U1UIR `VEuc  1 e 1 @689 ]
+[s S2560 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 ABDIE 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 ABDIF 1 0 :1:6 
+`uc 1 WUIF 1 0 :1:7 
+]
+"17404
+[s S2566 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 U1ABDIE 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 U1ABDIF 1 0 :1:6 
+`uc 1 U1WUIF 1 0 :1:7 
+]
+[u S2572 . 1 `S2560 1 . 1 0 `S2566 1 . 1 0 ]
+[v _U1UIRbits U1UIRbits `VES2572  1 e 1 @689 ]
+"17439
+[v _U1ERRIR U1ERRIR `VEuc  1 e 1 @690 ]
+[s S2588 . 1 `uc 1 TXCIF 1 0 :1:0 
+`uc 1 RXFOIF 1 0 :1:1 
+`uc 1 RXBKIF 1 0 :1:2 
+`uc 1 FERIF 1 0 :1:3 
+`uc 1 CERIF 1 0 :1:4 
+`uc 1 ABDOVF 1 0 :1:5 
+`uc 1 PERIF 1 0 :1:6 
+`uc 1 TXMTIF 1 0 :1:7 
+]
+"17466
+[s S2597 . 1 `uc 1 U1TXCIF 1 0 :1:0 
+`uc 1 U1RXFOIF 1 0 :1:1 
+`uc 1 U1RXBKIF 1 0 :1:2 
+`uc 1 U1FERIF 1 0 :1:3 
+`uc 1 U1CERIF 1 0 :1:4 
+`uc 1 U1ABDOVF 1 0 :1:5 
+`uc 1 U1PERIF 1 0 :1:6 
+`uc 1 U1TXMTIF 1 0 :1:7 
+]
+[u S2606 . 1 `S2588 1 . 1 0 `S2597 1 . 1 0 ]
+[v _U1ERRIRbits U1ERRIRbits `VES2606  1 e 1 @690 ]
+"17551
+[v _U1ERRIE U1ERRIE `VEuc  1 e 1 @691 ]
+"22850
+[v _TMR0L TMR0L `VEuc  1 e 1 @792 ]
+"22988
+[v _TMR0H TMR0H `VEuc  1 e 1 @793 ]
+"23242
+[v _T0CON0 T0CON0 `VEuc  1 e 1 @794 ]
+[s S1635 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 MD16 1 0 :1:4 
+`uc 1 OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"23270
+[s S1641 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+`uc 1 T0MD16 1 0 :1:4 
+`uc 1 T0OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 T0EN 1 0 :1:7 
+]
+[s S1647 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 T016BIT 1 0 :1:4 
+]
+[u S1653 . 1 `S1635 1 . 1 0 `S1641 1 . 1 0 `S1647 1 . 1 0 ]
+[v _T0CON0bits T0CON0bits `VES1653  1 e 1 @794 ]
+"23340
+[v _T0CON1 T0CON1 `VEuc  1 e 1 @795 ]
+"23482
+[v _TMR1L TMR1L `VEuc  1 e 1 @796 ]
+"23552
+[v _TMR1H TMR1H `VEuc  1 e 1 @797 ]
+"23622
+[v _T1CON T1CON `VEuc  1 e 1 @798 ]
+[s S1781 . 1 `uc 1 ON 1 0 :1:0 
+`uc 1 RD16 1 0 :1:1 
+`uc 1 NOT_SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CKPS 1 0 :2:4 
+]
+"23658
+[s S1787 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 T1RD16 1 0 :1:1 
+`uc 1 NOT_T1SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+]
+[s S1794 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+]
+[s S1798 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RD161 1 0 :1:1 
+]
+[u S1801 . 1 `S1781 1 . 1 0 `S1787 1 . 1 0 `S1794 1 . 1 0 `S1798 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES1801  1 e 1 @798 ]
+"23812
+[v _T1GCON T1GCON `VEuc  1 e 1 @799 ]
+[s S1827 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 GVAL 1 0 :1:2 
+`uc 1 GGO 1 0 :1:3 
+`uc 1 GSPM 1 0 :1:4 
+`uc 1 GTM 1 0 :1:5 
+`uc 1 GPOL 1 0 :1:6 
+`uc 1 GE 1 0 :1:7 
+]
+"23850
+[s S1835 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1GVAL 1 0 :1:2 
+`uc 1 T1GGO 1 0 :1:3 
+`uc 1 T1GSPM 1 0 :1:4 
+`uc 1 T1GTM 1 0 :1:5 
+`uc 1 T1GPOL 1 0 :1:6 
+`uc 1 T1GE 1 0 :1:7 
+]
+[s S1843 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_DONE 1 0 :1:3 
+]
+[s S1846 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_T1DONE 1 0 :1:3 
+]
+[u S1849 . 1 `S1827 1 . 1 0 `S1835 1 . 1 0 `S1843 1 . 1 0 `S1846 1 . 1 0 ]
+[v _T1GCONbits T1GCONbits `VES1849  1 e 1 @799 ]
+"24026
+[v _T1GATE T1GATE `VEuc  1 e 1 @800 ]
+"24216
+[v _T1CLK T1CLK `VEuc  1 e 1 @801 ]
+"24382
+[v _T2TMR T2TMR `VEuc  1 e 1 @802 ]
+"24387
+[v _TMR2 TMR2 `VEuc  1 e 1 @802 ]
+"24420
+[v _T2PR T2PR `VEuc  1 e 1 @803 ]
+"24425
+[v _PR2 PR2 `VEuc  1 e 1 @803 ]
+"24458
+[v _T2CON T2CON `VEuc  1 e 1 @804 ]
+[s S2151 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 CKPS 1 0 :3:4 
+`uc 1 ON 1 0 :1:7 
+]
+"24494
+[s S2155 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+`uc 1 T2CKPS 1 0 :3:4 
+`uc 1 T2ON 1 0 :1:7 
+]
+[s S2159 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+`uc 1 T2OUTPS1 1 0 :1:1 
+`uc 1 T2OUTPS2 1 0 :1:2 
+`uc 1 T2OUTPS3 1 0 :1:3 
+`uc 1 T2CKPS0 1 0 :1:4 
+`uc 1 T2CKPS1 1 0 :1:5 
+`uc 1 T2CKPS2 1 0 :1:6 
+]
+[s S2167 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+`uc 1 CKPS2 1 0 :1:6 
+`uc 1 TMR2ON 1 0 :1:7 
+]
+[u S2176 . 1 `S2151 1 . 1 0 `S2155 1 . 1 0 `S2159 1 . 1 0 `S2167 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES2176  1 e 1 @804 ]
+"24604
+[v _T2HLT T2HLT `VEuc  1 e 1 @805 ]
+[s S2021 . 1 `uc 1 MODE 1 0 :5:0 
+`uc 1 CKSYNC 1 0 :1:5 
+`uc 1 CKPOL 1 0 :1:6 
+`uc 1 PSYNC 1 0 :1:7 
+]
+"24637
+[s S2026 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 MODE3 1 0 :1:3 
+`uc 1 MODE4 1 0 :1:4 
+]
+[s S2032 . 1 `uc 1 T2MODE 1 0 :5:0 
+`uc 1 T2CKSYNC 1 0 :1:5 
+`uc 1 T2CKPOL 1 0 :1:6 
+`uc 1 T2PSYNC 1 0 :1:7 
+]
+[s S2037 . 1 `uc 1 T2MODE0 1 0 :1:0 
+`uc 1 T2MODE1 1 0 :1:1 
+`uc 1 T2MODE2 1 0 :1:2 
+`uc 1 T2MODE3 1 0 :1:3 
+`uc 1 T2MODE4 1 0 :1:4 
+]
+[u S2043 . 1 `S2021 1 . 1 0 `S2026 1 . 1 0 `S2032 1 . 1 0 `S2037 1 . 1 0 ]
+[v _T2HLTbits T2HLTbits `VES2043  1 e 1 @805 ]
+"24732
+[v _T2CLKCON T2CLKCON `VEuc  1 e 1 @806 ]
+"24938
+[v _T2RST T2RST `VEuc  1 e 1 @807 ]
+[s S2105 . 1 `uc 1 RSEL 1 0 :8:0 
+]
+"24969
+[s S2107 . 1 `uc 1 RSEL0 1 0 :1:0 
+`uc 1 RSEL1 1 0 :1:1 
+`uc 1 RSEL2 1 0 :1:2 
+`uc 1 RSEL3 1 0 :1:3 
+`uc 1 RSEL4 1 0 :1:4 
+`uc 1 RSEL5 1 0 :1:5 
+`uc 1 RSEL6 1 0 :1:6 
+]
+[s S2115 . 1 `uc 1 T2RSEL 1 0 :8:0 
+]
+[s S2117 . 1 `uc 1 T2RSEL0 1 0 :1:0 
+`uc 1 T2RSEL1 1 0 :1:1 
+`uc 1 T2RSEL2 1 0 :1:2 
+`uc 1 T2RSEL3 1 0 :1:3 
+`uc 1 T2RSEL4 1 0 :1:4 
+`uc 1 T2RSEL5 1 0 :1:5 
+`uc 1 T2RSEL6 1 0 :1:6 
+]
+[u S2125 . 1 `S2105 1 . 1 0 `S2107 1 . 1 0 `S2115 1 . 1 0 `S2117 1 . 1 0 ]
+[v _T2RSTbits T2RSTbits `VES2125  1 e 1 @807 ]
+"34751
+[v _ADLTHL ADLTHL `VEuc  1 e 1 @985 ]
+"34879
+[v _ADLTHH ADLTHH `VEuc  1 e 1 @986 ]
+"35014
+[v _ADUTHL ADUTHL `VEuc  1 e 1 @987 ]
+"35142
+[v _ADUTHH ADUTHH `VEuc  1 e 1 @988 ]
+"35277
+[v _ADERRL ADERRL `VEuc  1 e 1 @989 ]
+"35405
+[v _ADERRH ADERRH `VEuc  1 e 1 @990 ]
+"35540
+[v _ADSTPTL ADSTPTL `VEuc  1 e 1 @991 ]
+"35668
+[v _ADSTPTH ADSTPTH `VEuc  1 e 1 @992 ]
+"35803
+[v _ADFLTRL ADFLTRL `VEuc  1 e 1 @993 ]
+"35931
+[v _ADFLTRH ADFLTRH `VEuc  1 e 1 @994 ]
+"36068
+[v _ADACCL ADACCL `VEuc  1 e 1 @995 ]
+"36196
+[v _ADACCH ADACCH `VEuc  1 e 1 @996 ]
+"36324
+[v _ADACCU ADACCU `VEuc  1 e 1 @997 ]
+"36452
+[v _ADCNT ADCNT `VEuc  1 e 1 @998 ]
+"36580
+[v _ADRPT ADRPT `VEuc  1 e 1 @999 ]
+"36715
+[v _ADPREVL ADPREVL `VEuc  1 e 1 @1000 ]
+"36843
+[v _ADPREVH ADPREVH `VEuc  1 e 1 @1001 ]
+"36971
+[v _ADRES ADRES `VEus  1 e 2 @1002 ]
+"36978
+[v _ADRESL ADRESL `VEuc  1 e 1 @1002 ]
+"37106
+[v _ADRESH ADRESH `VEuc  1 e 1 @1003 ]
+"37226
+[v _ADPCH ADPCH `VEuc  1 e 1 @1004 ]
+"37291
+[v _ADACQL ADACQL `VEuc  1 e 1 @1006 ]
+"37419
+[v _ADACQH ADACQH `VEuc  1 e 1 @1007 ]
+"37511
+[v _ADCAP ADCAP `VEuc  1 e 1 @1008 ]
+"37570
+[v _ADPREL ADPREL `VEuc  1 e 1 @1009 ]
+"37698
+[v _ADPREH ADPREH `VEuc  1 e 1 @1010 ]
+"37790
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @1011 ]
+[s S473 . 1 `uc 1 GO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 FM 1 0 :2:2 
+`uc 1 CS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CONT 1 0 :1:6 
+`uc 1 ON 1 0 :1:7 
+]
+"37828
+[s S481 . 1 `uc 1 ADGO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM 1 0 :2:2 
+`uc 1 ADCS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ADCONT 1 0 :1:6 
+`uc 1 ADON 1 0 :1:7 
+]
+"37828
+[s S489 . 1 `uc 1 DONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 FM0 1 0 :1:2 
+]
+"37828
+[s S493 . 1 `uc 1 GO_NOT_DONE 1 0 :1:0 
+]
+"37828
+[s S495 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM0 1 0 :1:2 
+]
+"37828
+[u S499 . 1 `S473 1 . 1 0 `S481 1 . 1 0 `S489 1 . 1 0 `S493 1 . 1 0 `S495 1 . 1 0 ]
+"37828
+"37828
+[v _ADCON0bits ADCON0bits `VES499  1 e 1 @1011 ]
+"37908
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @1012 ]
+[s S713 . 1 `uc 1 DSEN 1 0 :1:0 
+`uc 1 . 1 0 :4:1 
+`uc 1 GPOL 1 0 :1:5 
+`uc 1 IPEN 1 0 :1:6 
+`uc 1 PPOL 1 0 :1:7 
+]
+"37929
+[s S719 . 1 `uc 1 ADDSEN 1 0 :1:0 
+`uc 1 . 1 0 :4:1 
+`uc 1 ADGPOL 1 0 :1:5 
+`uc 1 ADIPEN 1 0 :1:6 
+`uc 1 ADPPOL 1 0 :1:7 
+]
+"37929
+[u S725 . 1 `S713 1 . 1 0 `S719 1 . 1 0 ]
+"37929
+"37929
+[v _ADCON1bits ADCON1bits `VES725  1 e 1 @1012 ]
+"37974
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @1013 ]
+[s S589 . 1 `uc 1 MD 1 0 :3:0 
+`uc 1 ACLR 1 0 :1:3 
+`uc 1 CRS 1 0 :3:4 
+`uc 1 PSIS 1 0 :1:7 
+]
+"38011
+[s S594 . 1 `uc 1 ADMD0 1 0 :1:0 
+`uc 1 ADMD1 1 0 :1:1 
+`uc 1 ADMD2 1 0 :1:2 
+`uc 1 ADACLR 1 0 :1:3 
+`uc 1 ADCRS0 1 0 :1:4 
+`uc 1 ADCRS1 1 0 :1:5 
+`uc 1 ADCRS2 1 0 :1:6 
+`uc 1 ADPSIS 1 0 :1:7 
+]
+"38011
+[s S603 . 1 `uc 1 ADMD 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCRS 1 0 :3:4 
+]
+"38011
+[s S607 . 1 `uc 1 MD0 1 0 :1:0 
+`uc 1 MD1 1 0 :1:1 
+`uc 1 MD2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CRS0 1 0 :1:4 
+`uc 1 CRS1 1 0 :1:5 
+`uc 1 CRS2 1 0 :1:6 
+]
+"38011
+[u S615 . 1 `S589 1 . 1 0 `S594 1 . 1 0 `S603 1 . 1 0 `S607 1 . 1 0 ]
+"38011
+"38011
+[v _ADCON2bits ADCON2bits `VES615  1 e 1 @1013 ]
+"38116
+[v _ADCON3 ADCON3 `VEuc  1 e 1 @1014 ]
+[s S534 . 1 `uc 1 TMD 1 0 :3:0 
+`uc 1 SOI 1 0 :1:3 
+`uc 1 CALC 1 0 :3:4 
+]
+"38151
+[s S538 . 1 `uc 1 ADTMD0 1 0 :1:0 
+`uc 1 ADTMD1 1 0 :1:1 
+`uc 1 ADTMD2 1 0 :1:2 
+`uc 1 ADSOI 1 0 :1:3 
+`uc 1 ADCALC0 1 0 :1:4 
+`uc 1 ADCALC1 1 0 :1:5 
+`uc 1 ADCALC2 1 0 :1:6 
+]
+"38151
+[s S546 . 1 `uc 1 ADTMD 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCALC 1 0 :3:4 
+]
+"38151
+[s S550 . 1 `uc 1 TMD0 1 0 :1:0 
+`uc 1 TMD1 1 0 :1:1 
+`uc 1 TMD2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CALC0 1 0 :1:4 
+`uc 1 CALC1 1 0 :1:5 
+`uc 1 CALC2 1 0 :1:6 
+]
+"38151
+[u S558 . 1 `S534 1 . 1 0 `S538 1 . 1 0 `S546 1 . 1 0 `S550 1 . 1 0 ]
+"38151
+"38151
+[v _ADCON3bits ADCON3bits `VES558  1 e 1 @1014 ]
+"38246
+[v _ADSTAT ADSTAT `VEuc  1 e 1 @1015 ]
+[s S649 . 1 `uc 1 STAT 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 MATH 1 0 :1:4 
+`uc 1 LTHR 1 0 :1:5 
+`uc 1 UTHR 1 0 :1:6 
+`uc 1 AOV 1 0 :1:7 
+]
+"38283
+[s S656 . 1 `uc 1 ADSTAT0 1 0 :1:0 
+`uc 1 ADSTAT1 1 0 :1:1 
+`uc 1 ADSTAT2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADMATH 1 0 :1:4 
+`uc 1 ADLTHR 1 0 :1:5 
+`uc 1 ADUTHR 1 0 :1:6 
+`uc 1 ADAOV 1 0 :1:7 
+]
+"38283
+[s S665 . 1 `uc 1 ADSTAT 1 0 :3:0 
+`uc 1 . 1 0 :4:3 
+`uc 1 ADOV 1 0 :1:7 
+]
+"38283
+[s S669 . 1 `uc 1 STAT0 1 0 :1:0 
+`uc 1 STAT1 1 0 :1:1 
+`uc 1 STAT2 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 OV 1 0 :1:7 
+]
+"38283
+[u S675 . 1 `S649 1 . 1 0 `S656 1 . 1 0 `S665 1 . 1 0 `S669 1 . 1 0 ]
+"38283
+"38283
+[v _ADSTATbits ADSTATbits `VES675  1 e 1 @1015 ]
+"38378
+[v _ADREF ADREF `VEuc  1 e 1 @1016 ]
+"38460
+[v _ADACT ADACT `VEuc  1 e 1 @1017 ]
+"38564
+[v _ADCLK ADCLK `VEuc  1 e 1 @1018 ]
+"38668
+[v _ANSELA ANSELA `VEuc  1 e 1 @1024 ]
+"38730
+[v _WPUA WPUA `VEuc  1 e 1 @1025 ]
+"38792
+[v _ODCONA ODCONA `VEuc  1 e 1 @1026 ]
+"38854
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @1027 ]
+"38916
+[v _INLVLA INLVLA `VEuc  1 e 1 @1028 ]
+"38978
+[v _IOCAP IOCAP `VEuc  1 e 1 @1029 ]
+"39040
+[v _IOCAN IOCAN `VEuc  1 e 1 @1030 ]
+"39102
+[v _IOCAF IOCAF `VEuc  1 e 1 @1031 ]
+"39164
+[v _ANSELB ANSELB `VEuc  1 e 1 @1032 ]
+"39226
+[v _WPUB WPUB `VEuc  1 e 1 @1033 ]
+"39288
+[v _ODCONB ODCONB `VEuc  1 e 1 @1034 ]
+"39350
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @1035 ]
+"39412
+[v _INLVLB INLVLB `VEuc  1 e 1 @1036 ]
+"39474
+[v _IOCBP IOCBP `VEuc  1 e 1 @1037 ]
+"39536
+[v _IOCBN IOCBN `VEuc  1 e 1 @1038 ]
+"39598
+[v _IOCBF IOCBF `VEuc  1 e 1 @1039 ]
+"39660
+[v _ANSELC ANSELC `VEuc  1 e 1 @1040 ]
+"39722
+[v _WPUC WPUC `VEuc  1 e 1 @1041 ]
+"39784
+[v _ODCONC ODCONC `VEuc  1 e 1 @1042 ]
+"39846
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @1043 ]
+"39908
+[v _INLVLC INLVLC `VEuc  1 e 1 @1044 ]
+"39970
+[v _IOCCP IOCCP `VEuc  1 e 1 @1045 ]
+"40032
+[v _IOCCN IOCCN `VEuc  1 e 1 @1046 ]
+"40094
+[v _IOCCF IOCCF `VEuc  1 e 1 @1047 ]
+"40156
+[v _ANSELD ANSELD `VEuc  1 e 1 @1048 ]
+"40218
+[v _WPUD WPUD `VEuc  1 e 1 @1049 ]
+"40280
+[v _ODCOND ODCOND `VEuc  1 e 1 @1050 ]
+"40342
+[v _SLRCOND SLRCOND `VEuc  1 e 1 @1051 ]
+"40404
+[v _INLVLD INLVLD `VEuc  1 e 1 @1052 ]
+"40466
+[v _ANSELE ANSELE `VEuc  1 e 1 @1056 ]
+"40498
+[v _WPUE WPUE `VEuc  1 e 1 @1057 ]
+"40536
+[v _ODCONE ODCONE `VEuc  1 e 1 @1058 ]
+"40568
+[v _SLRCONE SLRCONE `VEuc  1 e 1 @1059 ]
+"40600
+[v _INLVLE INLVLE `VEuc  1 e 1 @1060 ]
+"40638
+[v _IOCEP IOCEP `VEuc  1 e 1 @1061 ]
+"40659
+[v _IOCEN IOCEN `VEuc  1 e 1 @1062 ]
+"40680
+[v _IOCEF IOCEF `VEuc  1 e 1 @1063 ]
+"44851
+[v _PWM3ERS PWM3ERS `VEuc  1 e 1 @1150 ]
+"44921
+[v _PWM3CLK PWM3CLK `VEuc  1 e 1 @1151 ]
+"44991
+[v _PWM3LDS PWM3LDS `VEuc  1 e 1 @1152 ]
+"45068
+[v _PWM3PRL PWM3PRL `VEuc  1 e 1 @1153 ]
+"45088
+[v _PWM3PRH PWM3PRH `VEuc  1 e 1 @1154 ]
+"45108
+[v _PWM3CPRE PWM3CPRE `VEuc  1 e 1 @1155 ]
+"45128
+[v _PWM3PIPOS PWM3PIPOS `VEuc  1 e 1 @1156 ]
+"45148
+[v _PWM3GIR PWM3GIR `VEuc  1 e 1 @1157 ]
+[s S1032 . 1 `uc 1 S1P1IF 1 0 :1:0 
+`uc 1 S1P2IF 1 0 :1:1 
+]
+"45159
+[u S1035 . 1 `S1032 1 . 1 0 ]
+"45159
+"45159
+[v _PWM3GIRbits PWM3GIRbits `VES1035  1 e 1 @1157 ]
+"45174
+[v _PWM3GIE PWM3GIE `VEuc  1 e 1 @1158 ]
+[s S1108 . 1 `uc 1 S1P1IE 1 0 :1:0 
+`uc 1 S1P2IE 1 0 :1:1 
+]
+"45185
+[u S1111 . 1 `S1108 1 . 1 0 ]
+"45185
+"45185
+[v _PWM3GIEbits PWM3GIEbits `VES1111  1 e 1 @1158 ]
+"45200
+[v _PWM3CON PWM3CON `VEuc  1 e 1 @1159 ]
+[s S1093 . 1 `uc 1 ERSNOW 1 0 :1:0 
+`uc 1 ERSPOL 1 0 :1:1 
+`uc 1 LD 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 EN 1 0 :1:7 
+]
+"45214
+[u S1099 . 1 `S1093 1 . 1 0 ]
+"45214
+"45214
+[v _PWM3CONbits PWM3CONbits `VES1099  1 e 1 @1159 ]
+"45239
+[v _PWM3S1CFG PWM3S1CFG `VEuc  1 e 1 @1160 ]
+"45305
+[v _PWM3S1P1L PWM3S1P1L `VEuc  1 e 1 @1161 ]
+"45325
+[v _PWM3S1P1H PWM3S1P1H `VEuc  1 e 1 @1162 ]
+"45352
+[v _PWM3S1P2L PWM3S1P2L `VEuc  1 e 1 @1163 ]
+"45372
+[v _PWM3S1P2H PWM3S1P2H `VEuc  1 e 1 @1164 ]
+[s S1342 . 1 `uc 1 SWIE 1 0 :1:0 
+`uc 1 HLVDIE 1 0 :1:1 
+`uc 1 OSFIE 1 0 :1:2 
+`uc 1 CSWIE 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 CLC1IE 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 IOCIE 1 0 :1:7 
+]
+"45473
+[u S1351 . 1 `S1342 1 . 1 0 ]
+"45473
+"45473
+[v _PIE0bits PIE0bits `VES1351  1 e 1 @1182 ]
+[s S1385 . 1 `uc 1 SPI1RXIE 1 0 :1:0 
+`uc 1 SPI1TXIE 1 0 :1:1 
+`uc 1 SPI1IE 1 0 :1:2 
+`uc 1 TMR2IE 1 0 :1:3 
+`uc 1 TMR1IE 1 0 :1:4 
+`uc 1 TMR1GIE 1 0 :1:5 
+`uc 1 CCP1IE 1 0 :1:6 
+`uc 1 TMR0IE 1 0 :1:7 
+]
+"45632
+[u S1394 . 1 `S1385 1 . 1 0 ]
+"45632
+"45632
+[v _PIE3bits PIE3bits `VES1394  1 e 1 @1185 ]
+[s S1041 . 1 `uc 1 I2C1RXIE 1 0 :1:0 
+`uc 1 I2C1TXIE 1 0 :1:1 
+`uc 1 I2C1IE 1 0 :1:2 
+`uc 1 I2C1EIE 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 CLC3IE 1 0 :1:5 
+`uc 1 PWM3PIE 1 0 :1:6 
+`uc 1 PWM3IE 1 0 :1:7 
+]
+"45864
+[u S1050 . 1 `S1041 1 . 1 0 ]
+"45864
+"45864
+[v _PIE7bits PIE7bits `VES1050  1 e 1 @1189 ]
+[s S1363 . 1 `uc 1 SWIF 1 0 :1:0 
+`uc 1 HLVDIF 1 0 :1:1 
+`uc 1 OSFIF 1 0 :1:2 
+`uc 1 CSWIF 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 CLC1IF 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 IOCIF 1 0 :1:7 
+]
+"46347
+[u S1372 . 1 `S1363 1 . 1 0 ]
+"46347
+"46347
+[v _PIR0bits PIR0bits `VES1372  1 e 1 @1198 ]
+[s S428 . 1 `uc 1 INT0IF 1 0 :1:0 
+`uc 1 ZCDIF 1 0 :1:1 
+`uc 1 ADIF 1 0 :1:2 
+`uc 1 ACTIF 1 0 :1:3 
+`uc 1 C1IF 1 0 :1:4 
+`uc 1 SMT1IF 1 0 :1:5 
+`uc 1 SMT1PRAIF 1 0 :1:6 
+`uc 1 SMT1PWAIF 1 0 :1:7 
+]
+"46399
+[u S437 . 1 `S428 1 . 1 0 ]
+"46399
+"46399
+[v _PIR1bits PIR1bits `VES437  1 e 1 @1199 ]
+[s S449 . 1 `uc 1 ADTIF 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 DMA1SCNTIF 1 0 :1:4 
+`uc 1 DMA1DCNTIF 1 0 :1:5 
+`uc 1 DMA1ORIF 1 0 :1:6 
+`uc 1 DMA1AIF 1 0 :1:7 
+]
+"46459
+[u S456 . 1 `S449 1 . 1 0 ]
+"46459
+"46459
+[v _PIR2bits PIR2bits `VES456  1 e 1 @1200 ]
+[s S1406 . 1 `uc 1 SPI1RXIF 1 0 :1:0 
+`uc 1 SPI1TXIF 1 0 :1:1 
+`uc 1 SPI1IF 1 0 :1:2 
+`uc 1 TMR2IF 1 0 :1:3 
+`uc 1 TMR1IF 1 0 :1:4 
+`uc 1 TMR1GIF 1 0 :1:5 
+`uc 1 CCP1IF 1 0 :1:6 
+`uc 1 TMR0IF 1 0 :1:7 
+]
+"46506
+[u S1415 . 1 `S1406 1 . 1 0 ]
+"46506
+"46506
+[v _PIR3bits PIR3bits `VES1415  1 e 1 @1201 ]
+[s S1280 . 1 `uc 1 INT1IF 1 0 :1:0 
+`uc 1 CLC2IF 1 0 :1:1 
+`uc 1 CWG1IF 1 0 :1:2 
+`uc 1 NCO1IF 1 0 :1:3 
+`uc 1 DMA2SCNTIF 1 0 :1:4 
+`uc 1 DMA2DCNTIF 1 0 :1:5 
+`uc 1 DMA2ORIF 1 0 :1:6 
+`uc 1 DMA2AIF 1 0 :1:7 
+]
+"46676
+[u S1289 . 1 `S1280 1 . 1 0 ]
+"46676
+"46676
+[v _PIR6bits PIR6bits `VES1289  1 e 1 @1204 ]
+[s S1011 . 1 `uc 1 I2C1RXIF 1 0 :1:0 
+`uc 1 I2C1TXIF 1 0 :1:1 
+`uc 1 I2C1IF 1 0 :1:2 
+`uc 1 I2C1EIF 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 CLC3IF 1 0 :1:5 
+`uc 1 PWM3PIF 1 0 :1:6 
+`uc 1 PWM3IF 1 0 :1:7 
+]
+"46738
+[u S1020 . 1 `S1011 1 . 1 0 ]
+"46738
+"46738
+[v _PIR7bits PIR7bits `VES1020  1 e 1 @1205 ]
+[s S1311 . 1 `uc 1 INT2IF 1 0 :1:0 
+`uc 1 CLC5IF 1 0 :1:1 
+`uc 1 CWG2IF 1 0 :1:2 
+`uc 1 NCO2IF 1 0 :1:3 
+`uc 1 DMA3SCNTIF 1 0 :1:4 
+`uc 1 DMA3DCNTIF 1 0 :1:5 
+`uc 1 DMA3ORIF 1 0 :1:6 
+`uc 1 DMA3AIF 1 0 :1:7 
+]
+"46902
+[u S1320 . 1 `S1311 1 . 1 0 ]
+"46902
+"46902
+[v _PIR10bits PIR10bits `VES1320  1 e 1 @1208 ]
+"47204
+[v _LATA LATA `VEuc  1 e 1 @1214 ]
+[s S25 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"47221
+[u S34 . 1 `S25 1 . 1 0 ]
+"47221
+"47221
+[v _LATAbits LATAbits `VES34  1 e 1 @1214 ]
+"47266
+[v _LATB LATB `VEuc  1 e 1 @1215 ]
+"47328
+[v _LATC LATC `VEuc  1 e 1 @1216 ]
+"47390
+[v _LATD LATD `VEuc  1 e 1 @1217 ]
+"47452
+[v _LATE LATE `VEuc  1 e 1 @1218 ]
+"47484
+[v _TRISA TRISA `VEuc  1 e 1 @1222 ]
+"47546
+[v _TRISB TRISB `VEuc  1 e 1 @1223 ]
+"47608
+[v _TRISC TRISC `VEuc  1 e 1 @1224 ]
+"47670
+[v _TRISD TRISD `VEuc  1 e 1 @1225 ]
+"47732
+[v _TRISE TRISE `VEuc  1 e 1 @1226 ]
+[s S2829 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"47843
+[u S2838 . 1 `S2829 1 . 1 0 ]
+"47843
+"47843
+[v _PORTBbits PORTBbits `VES2838  1 e 1 @1231 ]
+[s S258 . 1 `uc 1 INT0EDG 1 0 :1:0 
+`uc 1 INT1EDG 1 0 :1:1 
+`uc 1 INT2EDG 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 IPEN 1 0 :1:5 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"48070
+[s S266 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 GIEH 1 0 :1:7 
+]
+"48070
+[u S269 . 1 `S258 1 . 1 0 `S266 1 . 1 0 ]
+"48070
+"48070
+[v _INTCON0bits INTCON0bits `VES269  1 e 1 @1238 ]
+"49014
+[v _TABLAT TABLAT `VEuc  1 e 1 @1269 ]
+"49043
+[v _TBLPTRL TBLPTRL `VEuc  1 e 1 @1270 ]
+"49063
+[v _TBLPTRH TBLPTRH `VEuc  1 e 1 @1271 ]
+"49083
+[v _TBLPTRU TBLPTRU `VEuc  1 e 1 @1272 ]
+"58779
+[v _TMR0IE TMR0IE `VEb  1 e 0 @9487 ]
+"58851
+[v _TMR1IF TMR1IF `VEb  1 e 0 @9612 ]
+"118 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"119
+[v _flags flags `uc  1 s 1 flags ]
+"144
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"54 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab02_Blink/Blink.c
+[v _flagCounter flagCounter `uc  1 s 1 flagCounter ]
+"49 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab03_Rotate/Rotate.c
+[v _rotateReg rotateReg `uc  1 s 1 rotateReg ]
+"49 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab04_AnalogToDigitalConversion/ADC.c
+[v _adcResult adcResult `uc  1 s 1 adcResult ]
+"49 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab05_VariableSpeedRotate/VSR.c
+[v _delay delay `uc  1 s 1 delay ]
+"50
+[v _rotateReg@VSR$F164 rotateReg `uc  1 s 1 rotateReg ]
+"55 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab06_PulseWidthModulation/PWM.c
+[v _adcResult@PWM$F215 adcResult `us  1 s 2 adcResult ]
+"49 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab07_Timers/Timers.c
+[v _rotateReg@Timers$F243 rotateReg `uc  1 s 1 rotateReg ]
+"54 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab08_Interrupts/Interrupts.c
+[v _rotateReg@Interrupts$F299 rotateReg `uc  1 s 1 rotateReg ]
+"54 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab10_EEPROM/EEPROM.c
+[v _adcResult@EEPROM$F403 adcResult `uc  1 s 1 adcResult ]
+"55
+[v _ledDisplay ledDisplay `uc  1 s 1 ledDisplay ]
+"40 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/nvm/src/nvm.c
+[v _unlockKeyLow unlockKeyLow `VNEuc  1 s 1 unlockKeyLow ]
+"41
+[v _unlockKeyHigh unlockKeyHigh `VNEuc  1 s 1 unlockKeyHigh ]
+"43 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/pwm/src/pwm3_16bit.c
+[v _PWM3_16BIT_Slice1Output1_InterruptHandler PWM3_16BIT_Slice1Output1_InterruptHandler `*.38(v  1 s 3 PWM3_16BIT_Slice1Output1_InterruptHandler ]
+"44
+[v _PWM3_16BIT_Slice1Output2_InterruptHandler PWM3_16BIT_Slice1Output2_InterruptHandler `*.38(v  1 s 3 PWM3_16BIT_Slice1Output2_InterruptHandler ]
+"45
+[v _PWM3_16BIT_Period_InterruptHandler PWM3_16BIT_Period_InterruptHandler `*.38(v  1 s 3 PWM3_16BIT_Period_InterruptHandler ]
+"38 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/system/src/interrupt.c
+[v _INT0_InterruptHandler INT0_InterruptHandler `*.38(v  1 e 3 0 ]
+"39
+[v _INT1_InterruptHandler INT1_InterruptHandler `*.38(v  1 e 3 0 ]
+"40
+[v _INT2_InterruptHandler INT2_InterruptHandler `*.38(v  1 e 3 0 ]
+"46 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/timer/src/tmr0.c
+[v _TMR0_OverflowCallback TMR0_OverflowCallback `*.38(v  1 s 3 TMR0_OverflowCallback ]
+"43 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/timer/src/tmr1.c
+[v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
+"54
+[v _TMR1_OverflowCallback TMR1_OverflowCallback `*.38(v  1 s 3 TMR1_OverflowCallback ]
+"56
+[v _TMR1_GateCallback TMR1_GateCallback `*.38(v  1 s 3 TMR1_GateCallback ]
+"50 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/timer/src/tmr2.c
+[v _TMR2_OverflowCallback TMR2_OverflowCallback `*.38(v  1 s 3 TMR2_OverflowCallback ]
+[s S2432 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"77 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/uart/src/uart1.c
+[u S2437 . 2 `S2432 1 . 1 0 `ui 1 status 2 0 ]
+[v _uart1RxLastError uart1RxLastError `VES2437  1 e 2 0 ]
+"83
+[v _UART1_FramingErrorHandler UART1_FramingErrorHandler `*.38(v  1 e 3 0 ]
+"84
+[v _UART1_OverrunErrorHandler UART1_OverrunErrorHandler `*.38(v  1 e 3 0 ]
+"85
+[v _UART1_ParityErrorHandler UART1_ParityErrorHandler `*.38(v  1 e 3 0 ]
+"46 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"98
+} 0
+"112
+[v _nextLab nextLab `(v  1 e 1 0 ]
+{
+"119
+} 0
+"100
+[v _checkButtonS1 checkButtonS1 `(v  1 e 1 0 ]
+{
+"110
+} 0
+"55 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab05_VariableSpeedRotate/VSR.c
+[v _VSR VSR `(v  1 e 1 0 ]
+{
+"92
+} 0
+"54 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab07_Timers/Timers.c
+[v _Timers Timers `(v  1 e 1 0 ]
+{
+"89
+} 0
+"55 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab09_SleepWakeup/SleepWakeUp.c
+[v _SleepWakeUp SleepWakeUp `(v  1 e 1 0 ]
+{
+"80
+} 0
+"37 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/system/src/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"50
+} 0
+"95 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/uart/src/uart1.c
+[v _UART1_Initialize UART1_Initialize `(v  1 e 1 0 ]
+{
+"144
+} 0
+"318
+[v _UART1_ParityErrorCallbackRegister UART1_ParityErrorCallbackRegister `(v  1 e 1 0 ]
+{
+[v UART1_ParityErrorCallbackRegister@callbackHandler callbackHandler `*.38(v  1 p 3 2 ]
+"324
+} 0
+"310
+[v _UART1_OverrunErrorCallbackRegister UART1_OverrunErrorCallbackRegister `(v  1 e 1 0 ]
+{
+[v UART1_OverrunErrorCallbackRegister@callbackHandler callbackHandler `*.38(v  1 p 3 2 ]
+"316
+} 0
+"302
+[v _UART1_FramingErrorCallbackRegister UART1_FramingErrorCallbackRegister `(v  1 e 1 0 ]
+{
+[v UART1_FramingErrorCallbackRegister@callbackHandler callbackHandler `*.38(v  1 p 3 2 ]
+"308
+} 0
+"57 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/timer/src/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"78
+} 0
+"122
+[v _TMR2_OverflowCallbackRegister TMR2_OverflowCallbackRegister `(v  1 e 1 0 ]
+{
+[v TMR2_OverflowCallbackRegister@InterruptHandler InterruptHandler `*.38(v  1 p 3 2 ]
+"124
+} 0
+"59 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/timer/src/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+{
+"87
+} 0
+"158
+[v _TMR1_OverflowCallbackRegister TMR1_OverflowCallbackRegister `(v  1 e 1 0 ]
+{
+[v TMR1_OverflowCallbackRegister@CallbackHandler CallbackHandler `*.38(v  1 p 3 2 ]
+"161
+} 0
+"184
+[v _TMR1_GateCallbackRegister TMR1_GateCallbackRegister `(v  1 e 1 0 ]
+{
+[v TMR1_GateCallbackRegister@CallbackHandler CallbackHandler `*.38(v  1 p 3 2 ]
+"187
+} 0
+"49 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/timer/src/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+{
+"72
+} 0
+"50 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/pwm/src/pwm3_16bit.c
+[v _PWM3_16BIT_Initialize PWM3_16BIT_Initialize `(v  1 e 1 0 ]
+{
+"119
+} 0
+"184
+[v _PWM3_16BIT_Slice1Output2_SetInterruptHandler PWM3_16BIT_Slice1Output2_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v PWM3_16BIT_Slice1Output2_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 2 ]
+"187
+} 0
+"179
+[v _PWM3_16BIT_Slice1Output1_SetInterruptHandler PWM3_16BIT_Slice1Output1_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v PWM3_16BIT_Slice1Output1_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 2 ]
+"182
+} 0
+"189
+[v _PWM3_16BIT_Period_SetInterruptHandler PWM3_16BIT_Period_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v PWM3_16BIT_Period_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 2 ]
+"192
+} 0
+"38 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"133
+} 0
+"43 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/nvm/src/nvm.c
+[v _NVM_Initialize NVM_Initialize `(v  1 e 1 0 ]
+{
+"46
+} 0
+"65
+[v _NVM_StatusClear NVM_StatusClear `(v  1 e 1 0 ]
+{
+"68
+} 0
+"42 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+{
+"71
+} 0
+"167
+[v _INT2_SetInterruptHandler INT2_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v INT2_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 2 ]
+"169
+} 0
+"141
+[v _INT1_SetInterruptHandler INT1_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v INT1_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 2 ]
+"143
+} 0
+"115
+[v _INT0_SetInterruptHandler INT0_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v INT0_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 2 ]
+"117
+} 0
+"37 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/system/src/clock.c
+[v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
+{
+"53
+} 0
+"38 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/clc/src/clc1.c
+[v _CLC1_Initialize CLC1_Initialize `(v  1 e 1 0 ]
+{
+"66
+} 0
+"45 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/adc/src/adcc.c
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+{
+"98
+} 0
+"54 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab03_Rotate/Rotate.c
+[v _Rotate Rotate `(v  1 e 1 0 ]
+{
+"83
+} 0
+"60 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab06_PulseWidthModulation/PWM.c
+[v _PWM PWM `(v  1 e 1 0 ]
+{
+"82
+} 0
+"98 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/timer/src/tmr2.c
+[v _TMR2_Stop TMR2_Stop `(v  1 e 1 0 ]
+{
+"102
+} 0
+"92
+[v _TMR2_Start TMR2_Start `(v  1 e 1 0 ]
+{
+"96
+} 0
+"84 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab06_PulseWidthModulation/PWM.c
+[v _PWM_Output_D5_Enable PWM_Output_D5_Enable `(v  1 e 1 0 ]
+{
+"95
+} 0
+"97
+[v _PWM_Output_D5_Disable PWM_Output_D5_Disable `(v  1 e 1 0 ]
+{
+"109
+} 0
+"137 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/pwm/src/pwm3_16bit.c
+[v _PWM3_16BIT_SetSlice1Output1DutyCycleRegister PWM3_16BIT_SetSlice1Output1DutyCycleRegister `(v  1 e 1 0 ]
+{
+[v PWM3_16BIT_SetSlice1Output1DutyCycleRegister@registerValue registerValue `us  1 p 2 2 ]
+"141
+} 0
+"149
+[v _PWM3_16BIT_LoadBufferRegisters PWM3_16BIT_LoadBufferRegisters `(v  1 e 1 0 ]
+{
+"153
+} 0
+"59 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab08_Interrupts/Interrupts.c
+[v _Interrupts Interrupts `(v  1 e 1 0 ]
+{
+"86
+} 0
+"116 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/timer/src/tmr0.c
+[v _TMR0_OverflowCallbackRegister TMR0_OverflowCallbackRegister `(v  1 e 1 0 ]
+{
+[v TMR0_OverflowCallbackRegister@CallbackHandler CallbackHandler `*.38(v  1 p 3 2 ]
+"119
+} 0
+"50 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab01_HelloWorld/HelloWorld.c
+[v _HelloWorld HelloWorld `(v  1 e 1 0 ]
+{
+"64
+} 0
+"60 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab10_EEPROM/EEPROM.c
+[v _EEPROM EEPROM `(v  1 e 1 0 ]
+{
+"85
+} 0
+"70 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/nvm/src/nvm.c
+[v _NVM_UnlockKeySet NVM_UnlockKeySet `(v  1 e 1 0 ]
+{
+[v NVM_UnlockKeySet@unlockKey unlockKey `us  1 p 2 2 ]
+"74
+} 0
+"309
+[v _EEPROM_Write EEPROM_Write `(v  1 e 1 0 ]
+{
+"312
+[v EEPROM_Write@globalInterruptBitValue globalInterruptBitValue `uc  1 a 1 9 ]
+"309
+[v EEPROM_Write@address address `um  1 p 3 2 ]
+[v EEPROM_Write@data data `uc  1 p 1 5 ]
+"345
+} 0
+"293
+[v _EEPROM_Read EEPROM_Read `(uc  1 e 1 0 ]
+{
+[v EEPROM_Read@address address `um  1 p 3 2 ]
+"307
+} 0
+"59 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab02_Blink/Blink.c
+[v _Blink Blink `(v  1 e 1 0 ]
+{
+"83
+} 0
+"95 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/timer/src/tmr1.c
+[v _TMR1_Stop TMR1_Stop `(v  1 e 1 0 ]
+{
+"99
+} 0
+"89
+[v _TMR1_Start TMR1_Start `(v  1 e 1 0 ]
+{
+"93
+} 0
+"137
+[v _TMR1_Reload TMR1_Reload `(v  1 e 1 0 ]
+{
+"140
+} 0
+"115
+[v _TMR1_Write TMR1_Write `(v  1 e 1 0 ]
+{
+[v TMR1_Write@timerVal timerVal `ui  1 p 2 2 ]
+"135
+} 0
+"169
+[v _TMR1_HasOverflowOccured TMR1_HasOverflowOccured `(a  1 e 1 0 ]
+{
+"172
+} 0
+"54 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab04_AnalogToDigitalConversion/ADC.c
+[v _ADC ADC `(v  1 e 1 0 ]
+{
+"76
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+{
+"8
+[v printf@ap ap `[1]*.39v  1 a 2 68 ]
+"5
+[v printf@fmt fmt `*.32Cuc  1 p 2 64 ]
+"13
+} 0
+"1546 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1549
+[v vfprintf@cfmt cfmt `*.32uc  1 a 2 62 ]
+[s S3344 _IO_FILE 0 ]
+"1546
+[v vfprintf@fp fp `*.2S3344  1 p 2 56 ]
+[v vfprintf@fmt fmt `*.32Cuc  1 p 2 58 ]
+[v vfprintf@ap ap `*.39*.39v  1 p 2 60 ]
+"1569
+} 0
+"1048
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+{
+[u S3362 . 4 `i 1 sint 2 0 `ui 1 uint 2 0 `*.2v 1 vp 3 0 `d 1 f 4 0 ]
+"1059
+[v vfpfcnvrt@convarg convarg `S3362  1 a 4 50 ]
+"1050
+[v vfpfcnvrt@cp cp `*.32uc  1 a 2 54 ]
+[s S3344 _IO_FILE 0 ]
+"1048
+[v vfpfcnvrt@fp fp `*.2S3344  1 p 2 42 ]
+[v vfpfcnvrt@fmt fmt `*.39*.32uc  1 p 2 44 ]
+[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 46 ]
+"1543
+} 0
+"470
+[v _dtoa dtoa `(v  1 s 1 dtoa ]
+{
+"473
+[v dtoa@i i `i  1 a 2 39 ]
+[v dtoa@w w `i  1 a 2 37 ]
+[v dtoa@p p `i  1 a 2 35 ]
+"472
+[v dtoa@s s `uc  1 a 1 41 ]
+[s S3344 _IO_FILE 0 ]
+"470
+[v dtoa@fp fp `*.2S3344  1 p 2 29 ]
+[v dtoa@d d `i  1 p 2 31 ]
+"527
+} 0
+"152
+[v _pad pad `(v  1 s 1 pad ]
+{
+"154
+[v pad@w w `i  1 a 2 27 ]
+[v pad@i i `i  1 a 2 25 ]
+[s S3344 _IO_FILE 0 ]
+"152
+[v pad@fp fp `*.2S3344  1 p 2 18 ]
+[v pad@buf buf `*.39uc  1 p 2 20 ]
+[v pad@p p `i  1 p 2 22 ]
+"183
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+"11
+[v fputs@i i `i  1 a 2 16 ]
+"10
+[v fputs@c c `uc  1 a 1 15 ]
+"8
+[v fputs@s s `*.39Cuc  1 p 2 11 ]
+[u S3323 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S3326 _IO_FILE 12 `S3323 1 . 3 0 `i 1 count 2 3 `[3]uc 1 ungetbuf 3 5 `i 1 ungetcnt 2 8 `i 1 limit 2 10 ]
+[v fputs@fp fp `*.2S3326  1 p 2 13 ]
+"19
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 2 ]
+[u S3323 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S3326 _IO_FILE 12 `S3323 1 . 3 0 `i 1 count 2 3 `[3]uc 1 ungetbuf 3 5 `i 1 ungetcnt 2 8 `i 1 limit 2 10 ]
+[v fputc@fp fp `*.2S3326  1 p 2 4 ]
+"24
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+"9
+} 0
+"1 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 8 ]
+"4
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 7 ]
+[v ___awmod@counter counter `uc  1 a 1 6 ]
+"7
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+[v ___awmod@divisor divisor `i  1 p 2 4 ]
+"34
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 8 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 7 ]
+[v ___awdiv@counter counter `uc  1 a 1 6 ]
+"7
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+[v ___awdiv@divisor divisor `i  1 p 2 4 ]
+"41
+} 0
+"121 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/adc/src/adcc.c
+[v _ADCC_GetSingleConversion ADCC_GetSingleConversion `(us  1 e 2 0 ]
+{
+[v ADCC_GetSingleConversion@channel channel `E16448  1 a 1 wreg ]
+[v ADCC_GetSingleConversion@channel channel `E16448  1 a 1 wreg ]
+"124
+[v ADCC_GetSingleConversion@channel channel `E16448  1 a 1 6 ]
+"141
+} 0
+"80 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+{
+"95
+} 0
+"106 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/timer/src/tmr0.c
+[v _TMR0_OverflowISR TMR0_OverflowISR `(v  1 e 1 0 ]
+{
+"114
+} 0
+"163 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/timer/src/tmr1.c
+[v _TMR1_DefaultOverflowCallback TMR1_DefaultOverflowCallback `(v  1 s 1 TMR1_DefaultOverflowCallback ]
+{
+"167
+} 0
+"121 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/timer/src/tmr0.c
+[v _TMR0_DefaultOverflowCallback TMR0_DefaultOverflowCallback `(v  1 s 1 TMR0_DefaultOverflowCallback ]
+{
+"125
+} 0
+"88 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\Labs/Lab08_Interrupts/Interrupts.c
+[v _LAB_ISR LAB_ISR `(v  1 e 1 0 ]
+{
+"98
+} 0
+"126 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/timer/src/tmr2.c
+[v _TMR2_DefaultOverflowCallback TMR2_DefaultOverflowCallback `(v  1 s 1 TMR2_DefaultOverflowCallback ]
+{
+"129
+} 0
+"135 C:\Users\c50931\OneDrive - Microchip Technology Inc\Desktop\PIC18F47Q43 HPC Demo Code\pic18f47q43-curiosity-hpc-demo-code.X\mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
+{
+"137
+} 0

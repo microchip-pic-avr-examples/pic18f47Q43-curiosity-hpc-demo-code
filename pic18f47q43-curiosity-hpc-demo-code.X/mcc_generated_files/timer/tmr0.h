@@ -1,66 +1,37 @@
 /**
-  TMR0 Generated Driver API Header File
- 
-  @Company
-    Microchip Technology Inc.
- 
-  @File Name
-    tmr0.h
- 
-  @Summary
-    This is the generated header file for the TMR0 driver
- 
-  @Description
-    This header file provides APIs for driver for TMR0.
-    Generation Information :
-        Driver Version    :  2.01
-    The generated drivers are tested against the following:
-        Compiler          :  XC8 v2.31
-        MPLAB             :  MPLAB X v5.45
+ * TMR0 Generated Driver API Header File
+ * 
+ * @file tmr0.h
+ * 
+ * @defgroup tmr0 TMR0
+ * 
+ * @brief This file contains the API prototypes and other data types for the TMR0 driver.
+ *
+ * @version TMR0 Driver Version 2.1.1
 */
-
 /*
-Copyright (c) [2012-2020] Microchip Technology Inc.  
+© [2023] Microchip Technology Inc. and its subsidiaries.
 
-    All rights reserved.
-
-    You are permitted to use the accompanying software and its derivatives 
-    with Microchip products. See the Microchip license agreement accompanying 
-    this software, if any, for additional info regarding your rights and 
-    obligations.
-    
-    MICROCHIP SOFTWARE AND DOCUMENTATION ARE PROVIDED "AS IS" WITHOUT 
-    WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT 
-    LIMITATION, ANY WARRANTY OF MERCHANTABILITY, TITLE, NON-INFRINGEMENT 
-    AND FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT WILL MICROCHIP OR ITS
-    LICENSORS BE LIABLE OR OBLIGATED UNDER CONTRACT, NEGLIGENCE, STRICT 
-    LIABILITY, CONTRIBUTION, BREACH OF WARRANTY, OR OTHER LEGAL EQUITABLE 
-    THEORY FOR ANY DIRECT OR INDIRECT DAMAGES OR EXPENSES INCLUDING BUT NOT 
-    LIMITED TO ANY INCIDENTAL, SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES, 
-    OR OTHER SIMILAR COSTS. 
-    
-    To the fullest extend allowed by law, Microchip and its licensors 
-    liability will not exceed the amount of fees, if any, that you paid 
-    directly to Microchip to use this software. 
-    
-    THIRD PARTY SOFTWARE:  Notwithstanding anything to the contrary, any 
-    third party software accompanying this software is subject to the terms 
-    and conditions of the third party's license agreement.  To the extent 
-    required by third party licenses covering such third party software, 
-    the terms of such license will apply in lieu of the terms provided in 
-    this notice or applicable license.  To the extent the terms of such 
-    third party licenses prohibit any of the restrictions described here, 
-    such restrictions will not apply to such third party software.
+    Subject to your compliance with these terms, you may use Microchip 
+    software and any derivatives exclusively with Microchip products. 
+    You are responsible for complying with 3rd party license terms  
+    applicable to your use of 3rd party software (including open source  
+    software) that may accompany Microchip software. SOFTWARE IS ?AS IS.? 
+    NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, APPLY TO THIS 
+    SOFTWARE, INCLUDING ANY IMPLIED WARRANTIES OF NON-INFRINGEMENT,  
+    MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT 
+    WILL MICROCHIP BE LIABLE FOR ANY INDIRECT, SPECIAL, PUNITIVE, 
+    INCIDENTAL OR CONSEQUENTIAL LOSS, DAMAGE, COST OR EXPENSE OF ANY 
+    KIND WHATSOEVER RELATED TO THE SOFTWARE, HOWEVER CAUSED, EVEN IF 
+    MICROCHIP HAS BEEN ADVISED OF THE POSSIBILITY OR THE DAMAGES ARE 
+    FORESEEABLE. TO THE FULLEST EXTENT ALLOWED BY LAW, MICROCHIP?S 
+    TOTAL LIABILITY ON ALL CLAIMS RELATED TO THE SOFTWARE WILL NOT 
+    EXCEED AMOUNT OF FEES, IF ANY, YOU PAID DIRECTLY TO MICROCHIP FOR 
+    THIS SOFTWARE.
 */
 
 #ifndef TMR0_H
 #define TMR0_H
-
-/**
- * @brief This file contains API prototypes and other datatypes for Timer-0 module.
- * @defgroup timer0_driver  Timer 0
- * @{
- */
 
 #include <stdint.h>
 #include <stdbool.h>
@@ -68,196 +39,81 @@ Copyright (c) [2012-2020] Microchip Technology Inc.
 
 
 /**
- @ingroup timer0_driver
+ @ingroup tmr0
  @struct TMR_INTERFACE
- @brief This is an instance of TMR_INTERFACE for Timer-0 module
+ @brief Declares an instance of TMR_INTERFACE for the Timer0 module
  */
-extern const struct TMR_INTERFACE Timer0;
+extern const struct TMR_INTERFACE tmr0;
 
 /**
- * @ingroup timer0_driver
- * @brief This API initializes the Timer-0 module.
- *        This routine must be called before any other Timer-0 routines.
- * @param void.
- * @return void.
- *
- * @code
- * void main(void)
- * {
- *     Timer0_Initialize();
- *     
- *     while(1)
- *     {   
- *         Timer0_Tasks();
- *     }
- * }
- * @endcode
+ * @ingroup tmr0
+ * @brief Initializes the Timer0 module.
+ *        This routine must be called before any other Timer0 routines.
+ * @param None.
+ * @return None.
  */
-void Timer0_Initialize(void);
+void TMR0_Initialize(void);
 
 /**
- * @ingroup timer0_driver
- * @brief This function starts Timer-0.
- *        Timer-0 should be initialized with Timer0_Initialize() before calling this API.
- * @param void.
- * @return void.
- *
- * @code
- * void main(void)
- * {
- *     Timer0_Initialize();
- *     
- *     //Start timer if it is not already started
- *     Timer0_Start();
- *     
- *     while(1)
- *     {
- *         Timer0_Tasks();
- *     }
- * }
- * @endcode
+ * @ingroup tmr0
+ * @brief Starts Timer0.
+ * @pre Timer0 should be initialized with TMR0_Initialize() before calling this API.
+ * @param None.
+ * @return None.
  */
-void Timer0_Start(void);
+void TMR0_Start(void);
 
 /**
- * @ingroup timer0_driver
- * @brief This function stops Timer-0.
- *        Timer-0 should be initialized with Timer0_Initialize() before calling this API.
- * @param void.
- * @return void.
- *
- * @code
- * void customAppCallback(void)
- * {
- *     static uint8_t counter;
- *     if(counter++ == 10)
- *     {
- *         counter = 0;
- *         //Stop timer after 10 timeouts
- *         Timer0_Stop();
- *     }
- * }
- * void main(void)
- * {
- *     Timer0_Initialize();
- *     
- *     while(1)
- *     {
- *         Timer0_Tasks();
- *     }
- * }
- * @endcode
+ * @ingroup tmr0
+ * @brief Stops Timer0.
+ * @pre Timer0 should be initialized with TMR0_Initialize() before calling this API.
+ * @param None.
+ * @return None.
  */
-void Timer0_Stop(void);
+void TMR0_Stop(void);
 
 /**
- * @ingroup timer0_driver
- * @brief This function reads the 8 bits from TMRTMR0 register.
- *        Timer-0 should be initialized with Timer0_Initialize() before calling this API.
- * @param void.
- * @return 8-bit data from TMRTMR0 register.
- *
- * @code
- * void main(void)
- * {
- *     Timer0_Initialize();
- *     
- *     //Start timer if it is not already started
- *     Timer0_Start();
- *     
- *     while(1)
- *     {
- *         if(Timer0_Read() == 0x80)
- *         {
- *             //do something
- *         }
- *     }
- * }
- * @endcode
+ * @ingroup tmr0
+ * @brief Reads the 8-bit from the TMR0L register.
+ * @pre Timer0 should be initialized with TMR0_Initialize() before calling this API.
+ * @param None.
+ * @return 8-bit data from the TMR0L register.
  */
-uint8_t Timer0_Read(void);
+uint8_t TMR0_Read(void);
 
 /**
- * @ingroup timer0_driver
- * @brief This function writes 8-bit value to TMRTMR0 register.
- *        Timer-0 should be initialized with Timer0_Initialize() before calling this API.
- * @param 8-bit value to be written to TMRTMR0 register.
- * @return void.
- *
- * @code
- * void main(void)
- * {
- *     Timer0_Initialize();
- *     
- *     while(1)
- *     {
- *         if(Timer0_Read() == 0x0)
- *         {
- *             Timer0_Write(0x80)
- *         }
- *     }
- * }
- * @endcode
+ * @ingroup tmr0
+ * @brief Writes the 8-bit value to the TMR0L register.
+ * @pre Timer0 should be initialized with TMR0_Initialize() before calling this API.
+ * @param timerVal - 8-bit value to be written to the TMR0L register.
+ * @return None.
  */
-void Timer0_Write(size_t timerVal);
+void TMR0_Write(uint8_t timerVal);
 
 /**
- * @ingroup timer0_driver
- * @brief This function loads 8 bit value to TMRTMR0H register.
- *        Timer-0 should be initialized with Timer0_Initialize() before calling this API.
- * @param 8-bit value to be written to TMRTMR0H register.
- * @return void.
- *
- * @code
- * void main(void)
- * {
- *     Timer0_Initialize();
- *     
- *     while(1)
- *     {
- *         if(some_condition)
- *         {
- *             //Change the period value of TMR0
- *             Timer0_Reload(0x80);
- *         }
- *     }
- * }
- * @endcode
+ * @ingroup tmr0
+ * @brief Loads the 8-bit value to the TMR0H register.
+ * @pre Timer0 should be initialized with TMR0_Initialize() before calling this API.
+ * @param periodVal - 8-bit value written to the TMR0H register.
+ * @return None.
  */
-void Timer0_Reload(uint8_t periodVal);
+void TMR0_Reload(size_t periodVal);
 
 /**
- * @ingroup timer0_driver
- * @brief Interrupt Service Routine for Timer-0 overflow interrupt.
- * @param void
- * @return void
+ * @ingroup tmr0
+ * @brief Interrupt Service Routine (ISR) for Timer0 overflow interrupt.
+ * @param None.
+ * @return None.
  */
-void Timer0_OverflowISR(void);
+void TMR0_OverflowISR(void);
 
 /**
- * @ingroup timer0_driver
- * @brief Setter function for Timer-0 overflow Callback.
- * @param CallbackHandler - Pointer to custom Callback.
- * @return void
- *
- * @code
- * void customOverflowCallback(void)
- * {
- *    //Custom ISR code
- * }
- *
- * void main(void)
- * {
- *     Timer0_Initialize();
- *     Timer0_OverflowCallbackRegister(customOverflowCallback);
- *
- *     while(1)
- *     {
- *     }
- * }
- * @endcode
+ * @ingroup tmr0
+ * @brief Setter function for Timer0 overflow callback.
+ * @param CallbackHandler - Pointer to the custom callback.
+ * @return None.
  */
- void Timer0_OverflowCallbackRegister(void (* CallbackHandler)(void));
+ void TMR0_OverflowCallbackRegister(void (* CallbackHandler)(void));
 
 
 /**
