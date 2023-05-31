@@ -2,29 +2,29 @@
     "metaDataVersion": "1.0.0",
     "category": "com.microchip.ide.project",
     "content": {
-        "metaDataVersion": "1.1.0",
+        "metaDataVersion": "1.2.0",
         "name": "com.microchip.mcu8.mplabx.project.pic18f47q43-curiosity-hpc-demo-code",
-        "version": "2.0.0",
+        "version": "2.0.1",
         "displayName": "PIC18F47Q43 High-Pin-Count Curiosity Board Demo Code",
         "projectName": "pic18f47q43-curiosity-hpc-demo-code",
         "shortDescription": "Demo code for HPC board for PIC18-Q43 devices",
         "ide": {
             "name": "MPLAB X",
-            "semverRange": ">=5.45.0"
+            "semverRange": ">=6.10.0"
         },
         "compiler": [
 			{
 				"name": "XC8",
-				"semverRange": "^2.31.0"
+				"semverRange": "^2.41.0"
 			}
 		],
         "dfp": {
             "name": "PIC18F-Q_DFP",
-            "semverRange": "^1.11.185"
+            "semverRange": "^1.18.389"
         },
         "configurator": {
             "name": "MCC",
-            "semverRange": ">=4.1.0"
+            "semverRange": ">=5.3.7"
         },
         "device": {
             "metaDataVersion": "1.0.0",
