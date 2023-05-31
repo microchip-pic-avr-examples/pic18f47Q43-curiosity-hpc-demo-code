@@ -2,7 +2,7 @@
     "metaDataVersion": "1.0.0",
     "category": "com.microchip.ide.project",
     "content": {
-        "metaDataVersion": "1.2.0",
+        "metaDataVersion": "1.3.0",
         "name": "com.microchip.mcu8.mplabx.project.pic18f47q43-curiosity-hpc-demo-code",
         "version": "2.0.1",
         "displayName": "PIC18F47Q43 High-Pin-Count Curiosity Board Demo Code",
@@ -37,39 +37,18 @@
             }
         },
         "author": "Microchip",
-        "subcategories": [
-            "MCC",
-             [
-                "Peripherals", "ADCC"
-             ],
-             [
-                "Peripherals", "UART"
-             ],
-             [
-                "Peripherals", "Timer"
-             ],
-             [
-                 "Peripherals", "Interrupts"
-             ],
-             [
-                 "Peripherals", "Watchdog"
-             ],
-             [
-                 "Peripherals", "Sleep"
-             ],
-             [
-                 "Peripherals", "PWM"
-             ]                 			
-        ],
         "peripherals": [
-            "ADCC","UART","WWDT","TMR1","PWM"
+            "ADCC",
+            "UART",
+            "WWDT",
+            "TMR0",
+            "TMR1",
+            "TMR2",
+            "PWM"
         ],
         "keywords": [
-            "Demo Code",
             "Getting Started",
-            "Q43",
-            "PIC18-Q43",
-            "Curiosity Board",
+            "Curiosity",
             "Melody"				
         ],
 		"additionalData": {
